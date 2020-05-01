@@ -1,0 +1,6 @@
+framework module Pods_gdgminskTests {
+  umbrella header "Pods-gdgminskTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
