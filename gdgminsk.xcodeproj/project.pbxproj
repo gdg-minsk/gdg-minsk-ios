@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C18FE39245C54C700960952 /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18FE38245C54C700960952 /* ModuleBuilderProtocol.swift */; };
+		0C18FE3B245C54E200960952 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18FE3A245C54E200960952 /* Session.swift */; };
+		0C18FE3D245C54EF00960952 /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18FE3C245C54EF00960952 /* SessionType.swift */; };
 		0CE1024D245B8BFE0074F6CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1024C245B8BFE0074F6CC /* AppDelegate.swift */; };
 		0CE1024F245B8BFE0074F6CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1024E245B8BFE0074F6CC /* SceneDelegate.swift */; };
 		0CE10251245B8BFE0074F6CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE10250245B8BFE0074F6CC /* ViewController.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C18FE38245C54C700960952 /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
+		0C18FE3A245C54E200960952 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		0C18FE3C245C54EF00960952 /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
 		0CE10249245B8BFE0074F6CC /* gdgminsk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gdgminsk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE1024C245B8BFE0074F6CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CE1024E245B8BFE0074F6CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +82,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C18FE34245C546E00960952 /* ModuleBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				0C18FE38245C54C700960952 /* ModuleBuilderProtocol.swift */,
+			);
+			path = ModuleBuilder;
+			sourceTree = "<group>";
+		};
+		0C18FE35245C548100960952 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0C18FE36245C549000960952 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C18FE37245C54AE00960952 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0C18FE3A245C54E200960952 /* Session.swift */,
+				0C18FE3C245C54EF00960952 /* SessionType.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		0CE10240245B8BFD0074F6CC = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				0CE1027C245B8C150074F6CC /* App */,
+				0C18FE35245C548100960952 /* Service */,
+				0C18FE34245C546E00960952 /* ModuleBuilder */,
+				0C18FE36245C549000960952 /* Model */,
 				0CE1027D245B8C210074F6CC /* UI */,
 				0CE1027E245B8C330074F6CC /* Resourses */,
 				0CE1025A245B8C010074F6CC /* Info.plist */,
@@ -128,6 +168,7 @@
 		0CE1027C245B8C150074F6CC /* App */ = {
 			isa = PBXGroup;
 			children = (
+				0C18FE37245C54AE00960952 /* Core */,
 				0CE1024C245B8BFE0074F6CC /* AppDelegate.swift */,
 				0CE1024E245B8BFE0074F6CC /* SceneDelegate.swift */,
 			);
@@ -283,8 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C18FE3B245C54E200960952 /* Session.swift in Sources */,
 				0CE10251245B8BFE0074F6CC /* ViewController.swift in Sources */,
+				0C18FE39245C54C700960952 /* ModuleBuilderProtocol.swift in Sources */,
 				0CE1024D245B8BFE0074F6CC /* AppDelegate.swift in Sources */,
+				0C18FE3D245C54EF00960952 /* SessionType.swift in Sources */,
 				0CE1024F245B8BFE0074F6CC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,7 +509,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = by.minsk.gdg.gdgminsk;
+				PRODUCT_BUNDLE_IDENTIFIER = by.minsk.gdg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -483,7 +527,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = by.minsk.gdg.gdgminsk;
+				PRODUCT_BUNDLE_IDENTIFIER = by.minsk.gdg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
