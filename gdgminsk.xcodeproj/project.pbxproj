@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,8 +16,6 @@
 		0CE10254245B8BFE0074F6CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE10252245B8BFE0074F6CC /* Main.storyboard */; };
 		0CE10256245B8C010074F6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CE10255245B8C010074F6CC /* Assets.xcassets */; };
 		0CE10259245B8C010074F6CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE10257245B8C010074F6CC /* LaunchScreen.storyboard */; };
-		0CE10264245B8C020074F6CC /* gdgminskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE10263245B8C020074F6CC /* gdgminskTests.swift */; };
-		0CE1026F245B8C020074F6CC /* gdgminskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1026E245B8C020074F6CC /* gdgminskUITests.swift */; };
 		1E534B9292077A4317D51BBB /* Pods_gdgminsk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DC3376F71FDEB789DD9AC4 /* Pods_gdgminsk.framework */; };
 		31C5F295FD75DE8404D7B5CB /* Pods_gdgminsk_gdgminskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C494F2A00CC5B21396077AC2 /* Pods_gdgminsk_gdgminskUITests.framework */; };
 		C8CA72E91673A39AB04C1445 /* Pods_gdgminskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C424E49DA05973A2C4866626 /* Pods_gdgminskTests.framework */; };
@@ -53,10 +51,8 @@
 		0CE10258245B8C010074F6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CE1025A245B8C010074F6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CE1025F245B8C010074F6CC /* gdgminskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gdgminskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CE10263245B8C020074F6CC /* gdgminskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gdgminskTests.swift; sourceTree = "<group>"; };
 		0CE10265245B8C020074F6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CE1026A245B8C020074F6CC /* gdgminskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gdgminskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CE1026E245B8C020074F6CC /* gdgminskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gdgminskUITests.swift; sourceTree = "<group>"; };
 		0CE10270245B8C020074F6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2809F18415798FE82DA88FC0 /* Pods-gdgminsk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gdgminsk.debug.xcconfig"; path = "Target Support Files/Pods-gdgminsk/Pods-gdgminsk.debug.xcconfig"; sourceTree = "<group>"; };
 		384EC510C693AEA239E1B2A5 /* Pods-gdgminsk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gdgminsk.release.xcconfig"; path = "Target Support Files/Pods-gdgminsk/Pods-gdgminsk.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,7 +163,6 @@
 		0CE10262245B8C010074F6CC /* gdgminskTests */ = {
 			isa = PBXGroup;
 			children = (
-				0CE10263245B8C020074F6CC /* gdgminskTests.swift */,
 				0CE10265245B8C020074F6CC /* Info.plist */,
 			);
 			path = gdgminskTests;
@@ -176,7 +171,6 @@
 		0CE1026D245B8C020074F6CC /* gdgminskUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0CE1026E245B8C020074F6CC /* gdgminskUITests.swift */,
 				0CE10270245B8C020074F6CC /* Info.plist */,
 			);
 			path = gdgminskUITests;
@@ -230,7 +224,6 @@
 				C4ADF146D0CDD09C0896D8D3 /* Pods-gdgminskTests.debug.xcconfig */,
 				F2935C5338ABADC58F439AFE /* Pods-gdgminskTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -245,6 +238,7 @@
 				0CE10245245B8BFE0074F6CC /* Sources */,
 				0CE10246245B8BFE0074F6CC /* Frameworks */,
 				0CE10247245B8BFE0074F6CC /* Resources */,
+				0C18FE3E245C6BAE00960952 /* SwiftLint */,
 				B9F3D0ADEEE3552508DF8A0F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -410,6 +404,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		0C18FE3E245C6BAE00960952 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		3D10CD94FCE2E269D292D8A9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -486,7 +498,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CE10264245B8C020074F6CC /* gdgminskTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +505,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CE1026F245B8C020074F6CC /* gdgminskUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
