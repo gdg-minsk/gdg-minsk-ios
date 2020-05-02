@@ -16,6 +16,8 @@
 		0C18FE39245C54C700960952 /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18FE38245C54C700960952 /* ModuleBuilderProtocol.swift */; };
 		0C18FE3B245C54E200960952 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18FE3A245C54E200960952 /* Session.swift */; };
 		0C18FE3D245C54EF00960952 /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18FE3C245C54EF00960952 /* SessionType.swift */; };
+		0C36BF96245D94830086C219 /* SessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C36BF95245D94830086C219 /* SessionTests.swift */; };
+		0C36CE65245D97C0009C3853 /* GDGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C36CE64245D97C0009C3853 /* GDGUITests.swift */; };
 		0CE1024D245B8BFE0074F6CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1024C245B8BFE0074F6CC /* AppDelegate.swift */; };
 		0CE1024F245B8BFE0074F6CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1024E245B8BFE0074F6CC /* SceneDelegate.swift */; };
 		0CE10251245B8BFE0074F6CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE10250245B8BFE0074F6CC /* ViewController.swift */; };
@@ -54,6 +56,8 @@
 		0C18FE38245C54C700960952 /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
 		0C18FE3A245C54E200960952 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		0C18FE3C245C54EF00960952 /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
+		0C36BF95245D94830086C219 /* SessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTests.swift; sourceTree = "<group>"; };
+		0C36CE64245D97C0009C3853 /* GDGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDGUITests.swift; sourceTree = "<group>"; };
 		0CE10249245B8BFE0074F6CC /* gdgminsk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gdgminsk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE1024C245B8BFE0074F6CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CE1024E245B8BFE0074F6CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -198,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				0CE10265245B8C020074F6CC /* Info.plist */,
+				0C36BF95245D94830086C219 /* SessionTests.swift */,
 			);
 			path = gdgminskTests;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				0CE10270245B8C020074F6CC /* Info.plist */,
+				0C36CE64245D97C0009C3853 /* GDGUITests.swift */,
 			);
 			path = gdgminskUITests;
 			sourceTree = "<group>";
@@ -338,10 +344,12 @@
 					};
 					0CE1025E245B8C010074F6CC = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = 0CE10248245B8BFE0074F6CC;
 					};
 					0CE10269245B8C020074F6CC = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = 0CE10248245B8BFE0074F6CC;
 					};
 				};
@@ -538,6 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C36BF96245D94830086C219 /* SessionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +554,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C36CE65245D97C0009C3853 /* GDGUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,6 +753,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
 				INFOPLIST_FILE = gdgminskTests/Info.plist;
@@ -754,6 +765,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = by.minsk.gdg.gdgminskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gdgminsk.app/gdgminsk";
@@ -766,6 +778,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
 				INFOPLIST_FILE = gdgminskTests/Info.plist;
@@ -788,6 +801,7 @@
 			baseConfigurationReference = 9406556EC82463EC12FA0A77 /* Pods-gdgminsk-gdgminskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
 				INFOPLIST_FILE = gdgminskUITests/Info.plist;
@@ -798,6 +812,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = by.minsk.gdg.gdgminskUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = gdgminsk;
@@ -809,6 +824,7 @@
 			baseConfigurationReference = B2DEB4F48F9FE6C92817A552 /* Pods-gdgminsk-gdgminskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
 				INFOPLIST_FILE = gdgminskUITests/Info.plist;
