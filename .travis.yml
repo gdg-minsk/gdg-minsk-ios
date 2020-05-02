@@ -1,9 +1,10 @@
 osx_image: xcode11.3
 language: swift
 
-xcode_project: gdgminsk.xcworkspace 
+xcode_workspace: gdgminsk.xcworkspace 
 xcode_scheme: gdgminsk
 xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 11
+podfile: Podfile
 
 branches:
   only:
