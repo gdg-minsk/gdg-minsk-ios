@@ -10,6 +10,9 @@
 		0C0D9208245D91D200A4F2ED /* EventServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D9207245D91D200A4F2ED /* EventServiceProtocol.swift */; };
 		0C0D920A245D91E600A4F2ED /* EventViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D9209245D91E600A4F2ED /* EventViewItem.swift */; };
 		0C0D920C245D91F900A4F2ED /* MockEventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D920B245D91F900A4F2ED /* MockEventService.swift */; };
+		0C0D9213245D92DF00A4F2ED /* SpeakerServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D9212245D92DF00A4F2ED /* SpeakerServiceProtocol.swift */; };
+		0C0D9215245D92F400A4F2ED /* SpeakerViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D9214245D92F400A4F2ED /* SpeakerViewItem.swift */; };
+		0C0D9217245D930600A4F2ED /* MockSpeakerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D9216245D930600A4F2ED /* MockSpeakerService.swift */; };
 		0C18FE39245C54C700960952 /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18FE38245C54C700960952 /* ModuleBuilderProtocol.swift */; };
 		0C18FE3B245C54E200960952 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18FE3A245C54E200960952 /* Session.swift */; };
 		0C18FE3D245C54EF00960952 /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18FE3C245C54EF00960952 /* SessionType.swift */; };
@@ -45,6 +48,9 @@
 		0C0D9207245D91D200A4F2ED /* EventServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceProtocol.swift; sourceTree = "<group>"; };
 		0C0D9209245D91E600A4F2ED /* EventViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventViewItem.swift; path = gdgminsk/Service/EventService/EventViewItem.swift; sourceTree = SOURCE_ROOT; };
 		0C0D920B245D91F900A4F2ED /* MockEventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEventService.swift; sourceTree = "<group>"; };
+		0C0D9212245D92DF00A4F2ED /* SpeakerServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerServiceProtocol.swift; sourceTree = "<group>"; };
+		0C0D9214245D92F400A4F2ED /* SpeakerViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpeakerViewItem.swift; path = gdgminsk/Service/SpeakerService/SpeakerViewItem.swift; sourceTree = SOURCE_ROOT; };
+		0C0D9216245D930600A4F2ED /* MockSpeakerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpeakerService.swift; sourceTree = "<group>"; };
 		0C18FE38245C54C700960952 /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
 		0C18FE3A245C54E200960952 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		0C18FE3C245C54EF00960952 /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
@@ -108,6 +114,15 @@
 			path = EventService;
 			sourceTree = "<group>";
 		};
+		0C0D9211245D92CC00A4F2ED /* SpeakerService */ = {
+			isa = PBXGroup;
+			children = (
+				0C0D9212245D92DF00A4F2ED /* SpeakerServiceProtocol.swift */,
+				0C0D9216245D930600A4F2ED /* MockSpeakerService.swift */,
+			);
+			path = SpeakerService;
+			sourceTree = "<group>";
+		};
 		0C18FE34245C546E00960952 /* ModuleBuilder */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +134,7 @@
 		0C18FE35245C548100960952 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				0C0D9211245D92CC00A4F2ED /* SpeakerService */,
 				0C0D9206245D91C500A4F2ED /* EventService */,
 			);
 			path = Service;
@@ -128,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				0C0D9209245D91E600A4F2ED /* EventViewItem.swift */,
+				0C0D9214245D92F400A4F2ED /* SpeakerViewItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -507,10 +524,13 @@
 				0C0D920A245D91E600A4F2ED /* EventViewItem.swift in Sources */,
 				0C18FE39245C54C700960952 /* ModuleBuilderProtocol.swift in Sources */,
 				0CE1024D245B8BFE0074F6CC /* AppDelegate.swift in Sources */,
+				0C0D9215245D92F400A4F2ED /* SpeakerViewItem.swift in Sources */,
 				0C18FE3D245C54EF00960952 /* SessionType.swift in Sources */,
 				0CE1024F245B8BFE0074F6CC /* SceneDelegate.swift in Sources */,
 				0C0D9208245D91D200A4F2ED /* EventServiceProtocol.swift in Sources */,
+				0C0D9217245D930600A4F2ED /* MockSpeakerService.swift in Sources */,
 				0C0D920C245D91F900A4F2ED /* MockEventService.swift in Sources */,
+				0C0D9213245D92DF00A4F2ED /* SpeakerServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
