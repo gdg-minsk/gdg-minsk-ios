@@ -1,0 +1,6 @@
+framework module MVVMplusR {
+  umbrella header "MVVMplusR-umbrella.h"
+
+  export *
+  module * { export * }
+}

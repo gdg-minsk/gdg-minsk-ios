@@ -4,7 +4,9 @@
 target 'gdgminsk' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+
   # Core
+  pod 'MVVMplusR', '~> 0.0.3'
 
   # DI
   pod 'Swinject'
