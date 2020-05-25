@@ -1,18 +1,20 @@
 //
-//  ViewController.swift
+//  EventsViewController.swift
 //  gdgminsk
 //
-//  Created by Anton Polyakov on 5/1/20.
+//  Created by Anton Polyakov on 5/26/20.
 //  Copyright © 2020 gdgminsk. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class EventsViewController: UIViewController {
+
+    // MARK: Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
 }
