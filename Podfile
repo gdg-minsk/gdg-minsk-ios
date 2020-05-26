@@ -6,7 +6,7 @@ target 'gdgminsk' do
   use_frameworks!
 
   # Core
-  pod 'MVVMplusR', '~> 0.0.3'
+  pod 'MVVMplusR', '~> 0.0.4'
 
   # DI
   pod 'Swinject'

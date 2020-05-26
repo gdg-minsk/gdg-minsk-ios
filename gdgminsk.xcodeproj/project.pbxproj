@@ -15,11 +15,10 @@
 		0C0D9217245D930600A4F2ED /* MockSpeakerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D9216245D930600A4F2ED /* MockSpeakerService.swift */; };
 		0C18FE39245C54C700960952 /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18FE38245C54C700960952 /* ModuleBuilderProtocol.swift */; };
 		0C18FE3B245C54E200960952 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18FE3A245C54E200960952 /* Session.swift */; };
-		0C18FE3D245C54EF00960952 /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18FE3C245C54EF00960952 /* SessionType.swift */; };
 		0C36BF96245D94830086C219 /* SessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C36BF95245D94830086C219 /* SessionTests.swift */; };
 		0C36CE65245D97C0009C3853 /* GDGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C36CE64245D97C0009C3853 /* GDGUITests.swift */; };
 		0C697B49247C736E005F5E24 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C697B48247C736E005F5E24 /* Events.storyboard */; };
-		0C697B4C247C73CB005F5E24 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C697B4B247C73CB005F5E24 /* EventsViewController.swift */; };
+		0C697B4C247C73CB005F5E24 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C697B4B247C73CB005F5E24 /* EventsView.swift */; };
 		0C697B50247C7819005F5E24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C697B4F247C7819005F5E24 /* Images.xcassets */; };
 		0CE1024D245B8BFE0074F6CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1024C245B8BFE0074F6CC /* AppDelegate.swift */; };
 		0CE1024F245B8BFE0074F6CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1024E245B8BFE0074F6CC /* SceneDelegate.swift */; };
@@ -28,6 +27,7 @@
 		31C5F295FD75DE8404D7B5CB /* Pods_gdgminsk_gdgminskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C494F2A00CC5B21396077AC2 /* Pods_gdgminsk_gdgminskUITests.framework */; };
 		A081D534247D3A5C0074966F /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D533247D3A5C0074966F /* EventsViewModel.swift */; };
 		A081D536247D3A780074966F /* EventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D535247D3A780074966F /* EventsRouter.swift */; };
+		A081D538247D3CDB0074966F /* EventsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D537247D3CDB0074966F /* EventsModuleBuilder.swift */; };
 		C8CA72E91673A39AB04C1445 /* Pods_gdgminskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C424E49DA05973A2C4866626 /* Pods_gdgminskTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,11 +57,10 @@
 		0C0D9216245D930600A4F2ED /* MockSpeakerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpeakerService.swift; sourceTree = "<group>"; };
 		0C18FE38245C54C700960952 /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
 		0C18FE3A245C54E200960952 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		0C18FE3C245C54EF00960952 /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
 		0C36BF95245D94830086C219 /* SessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTests.swift; sourceTree = "<group>"; };
 		0C36CE64245D97C0009C3853 /* GDGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDGUITests.swift; sourceTree = "<group>"; };
 		0C697B48247C736E005F5E24 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
-		0C697B4B247C73CB005F5E24 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		0C697B4B247C73CB005F5E24 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		0C697B4F247C7819005F5E24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0CE10249245B8BFE0074F6CC /* gdgminsk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gdgminsk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE1024C245B8BFE0074F6CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +77,7 @@
 		9406556EC82463EC12FA0A77 /* Pods-gdgminsk-gdgminskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gdgminsk-gdgminskUITests.debug.xcconfig"; path = "Target Support Files/Pods-gdgminsk-gdgminskUITests/Pods-gdgminsk-gdgminskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A081D533247D3A5C0074966F /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
 		A081D535247D3A780074966F /* EventsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRouter.swift; sourceTree = "<group>"; };
+		A081D537247D3CDB0074966F /* EventsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModuleBuilder.swift; sourceTree = "<group>"; };
 		B2DEB4F48F9FE6C92817A552 /* Pods-gdgminsk-gdgminskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gdgminsk-gdgminskUITests.release.xcconfig"; path = "Target Support Files/Pods-gdgminsk-gdgminskUITests/Pods-gdgminsk-gdgminskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C424E49DA05973A2C4866626 /* Pods_gdgminskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gdgminskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C494F2A00CC5B21396077AC2 /* Pods_gdgminsk_gdgminskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gdgminsk_gdgminskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				0C18FE38245C54C700960952 /* ModuleBuilderProtocol.swift */,
+				A081D537247D3CDB0074966F /* EventsModuleBuilder.swift */,
 			);
 			path = ModuleBuilder;
 			sourceTree = "<group>";
@@ -161,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				0C18FE3A245C54E200960952 /* Session.swift */,
-				0C18FE3C245C54EF00960952 /* SessionType.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 		0C697B4A247C73BC005F5E24 /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				0C697B4B247C73CB005F5E24 /* EventsViewController.swift */,
+				0C697B4B247C73CB005F5E24 /* EventsView.swift */,
 				A081D533247D3A5C0074966F /* EventsViewModel.swift */,
 				A081D535247D3A780074966F /* EventsRouter.swift */,
 			);
@@ -563,9 +563,9 @@
 				0C0D920A245D91E600A4F2ED /* EventViewItem.swift in Sources */,
 				0C18FE39245C54C700960952 /* ModuleBuilderProtocol.swift in Sources */,
 				0CE1024D245B8BFE0074F6CC /* AppDelegate.swift in Sources */,
+				A081D538247D3CDB0074966F /* EventsModuleBuilder.swift in Sources */,
 				0C0D9215245D92F400A4F2ED /* SpeakerViewItem.swift in Sources */,
-				0C697B4C247C73CB005F5E24 /* EventsViewController.swift in Sources */,
-				0C18FE3D245C54EF00960952 /* SessionType.swift in Sources */,
+				0C697B4C247C73CB005F5E24 /* EventsView.swift in Sources */,
 				0CE1024F245B8BFE0074F6CC /* SceneDelegate.swift in Sources */,
 				0C0D9208245D91D200A4F2ED /* EventServiceProtocol.swift in Sources */,
 				0C0D9217245D930600A4F2ED /* MockSpeakerService.swift in Sources */,

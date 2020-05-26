@@ -1,5 +1,5 @@
 PODS:
-  - MVVMplusR (0.0.3)
+  - MVVMplusR (0.0.4)
   - ReactiveCocoa (10.3.0):
     - ReactiveSwift (~> 6.2)
   - ReactiveSwift (6.3.0)
@@ -8,7 +8,7 @@ PODS:
   - Swinject (2.7.1)
 
 DEPENDENCIES:
-  - MVVMplusR (~> 0.0.3)
+  - MVVMplusR (~> 0.0.4)
   - ReactiveCocoa
   - ReactiveSwift
   - SwiftGen
@@ -25,13 +25,13 @@ SPEC REPOS:
     - Swinject
 
 SPEC CHECKSUMS:
-  MVVMplusR: fb25dd731bc96e6d1a531b1155499677d3004300
+  MVVMplusR: b192e36e78e0b0ae2e82e6d14694bfff88a1d1e3
   ReactiveCocoa: 083ae559e6f588ce519cab412ea119b431c26a24
   ReactiveSwift: 7937f26ec18d555e2a99352bd0a8b2817d1f042d
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 56cfb08005453e11e7b8f29ef35ade7e403f081a
+PODFILE CHECKSUM: 416a3f0ffe02c906ac9b73315846b2122f650b15
 
 COCOAPODS: 1.8.4

@@ -8,6 +8,7 @@
 
 import Foundation
 import Swinject
+import MVVMplusR
 
 final class Session {
 

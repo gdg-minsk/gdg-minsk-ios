@@ -9,7 +9,7 @@
 import UIKit
 import MVVMplusR
 
-class EventsViewController: BaseView<EventsViewModel> {
+class EventsView: BaseView<EventsViewModel> {
 
     // MARK: Lifecycle
 

@@ -9,6 +9,7 @@
 import Foundation
 
 protocol ModuleBuilderProtocol {
+    
     associatedtype ModuleViewType
 
     func makeModule(session: Session) -> ModuleViewType
