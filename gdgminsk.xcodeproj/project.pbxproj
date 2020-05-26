@@ -28,6 +28,7 @@
 		A081D534247D3A5C0074966F /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D533247D3A5C0074966F /* EventsViewModel.swift */; };
 		A081D536247D3A780074966F /* EventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D535247D3A780074966F /* EventsRouter.swift */; };
 		A081D538247D3CDB0074966F /* EventsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D537247D3CDB0074966F /* EventsModuleBuilder.swift */; };
+		A0ECC4D8247D492700DA2B12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0ECC4D7247D492700DA2B12 /* Main.storyboard */; };
 		C8CA72E91673A39AB04C1445 /* Pods_gdgminskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C424E49DA05973A2C4866626 /* Pods_gdgminskTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		A081D533247D3A5C0074966F /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
 		A081D535247D3A780074966F /* EventsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRouter.swift; sourceTree = "<group>"; };
 		A081D537247D3CDB0074966F /* EventsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModuleBuilder.swift; sourceTree = "<group>"; };
+		A0ECC4D7247D492700DA2B12 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B2DEB4F48F9FE6C92817A552 /* Pods-gdgminsk-gdgminskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gdgminsk-gdgminskUITests.release.xcconfig"; path = "Target Support Files/Pods-gdgminsk-gdgminskUITests/Pods-gdgminsk-gdgminskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C424E49DA05973A2C4866626 /* Pods_gdgminskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gdgminskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C494F2A00CC5B21396077AC2 /* Pods_gdgminsk_gdgminskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gdgminsk_gdgminskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +173,7 @@
 			children = (
 				0CE10257245B8C010074F6CC /* LaunchScreen.storyboard */,
 				0C697B48247C736E005F5E24 /* Events.storyboard */,
+				A0ECC4D7247D492700DA2B12 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				0CE10259245B8C010074F6CC /* LaunchScreen.storyboard in Resources */,
 				0C697B50247C7819005F5E24 /* Images.xcassets in Resources */,
 				0C697B49247C736E005F5E24 /* Events.storyboard in Resources */,
+				A0ECC4D8247D492700DA2B12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
