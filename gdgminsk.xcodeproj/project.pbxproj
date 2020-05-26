@@ -23,10 +23,11 @@
 		0C697B50247C7819005F5E24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C697B4F247C7819005F5E24 /* Images.xcassets */; };
 		0CE1024D245B8BFE0074F6CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1024C245B8BFE0074F6CC /* AppDelegate.swift */; };
 		0CE1024F245B8BFE0074F6CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1024E245B8BFE0074F6CC /* SceneDelegate.swift */; };
-		0CE10254245B8BFE0074F6CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE10252245B8BFE0074F6CC /* Main.storyboard */; };
 		0CE10259245B8C010074F6CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE10257245B8C010074F6CC /* LaunchScreen.storyboard */; };
 		1E534B9292077A4317D51BBB /* Pods_gdgminsk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DC3376F71FDEB789DD9AC4 /* Pods_gdgminsk.framework */; };
 		31C5F295FD75DE8404D7B5CB /* Pods_gdgminsk_gdgminskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C494F2A00CC5B21396077AC2 /* Pods_gdgminsk_gdgminskUITests.framework */; };
+		A081D534247D3A5C0074966F /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D533247D3A5C0074966F /* EventsViewModel.swift */; };
+		A081D536247D3A780074966F /* EventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D535247D3A780074966F /* EventsRouter.swift */; };
 		C8CA72E91673A39AB04C1445 /* Pods_gdgminskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C424E49DA05973A2C4866626 /* Pods_gdgminskTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +66,6 @@
 		0CE10249245B8BFE0074F6CC /* gdgminsk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gdgminsk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE1024C245B8BFE0074F6CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CE1024E245B8BFE0074F6CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0CE10253245B8BFE0074F6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CE10258245B8C010074F6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CE1025A245B8C010074F6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CE1025F245B8C010074F6CC /* gdgminskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gdgminskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +76,8 @@
 		384EC510C693AEA239E1B2A5 /* Pods-gdgminsk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gdgminsk.release.xcconfig"; path = "Target Support Files/Pods-gdgminsk/Pods-gdgminsk.release.xcconfig"; sourceTree = "<group>"; };
 		70DC3376F71FDEB789DD9AC4 /* Pods_gdgminsk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gdgminsk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9406556EC82463EC12FA0A77 /* Pods-gdgminsk-gdgminskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gdgminsk-gdgminskUITests.debug.xcconfig"; path = "Target Support Files/Pods-gdgminsk-gdgminskUITests/Pods-gdgminsk-gdgminskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A081D533247D3A5C0074966F /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
+		A081D535247D3A780074966F /* EventsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRouter.swift; sourceTree = "<group>"; };
 		B2DEB4F48F9FE6C92817A552 /* Pods-gdgminsk-gdgminskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gdgminsk-gdgminskUITests.release.xcconfig"; path = "Target Support Files/Pods-gdgminsk-gdgminskUITests/Pods-gdgminsk-gdgminskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C424E49DA05973A2C4866626 /* Pods_gdgminskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gdgminskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C494F2A00CC5B21396077AC2 /* Pods_gdgminsk_gdgminskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gdgminsk_gdgminskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,7 +169,6 @@
 		0C697B47247C7347005F5E24 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				0CE10252245B8BFE0074F6CC /* Main.storyboard */,
 				0CE10257245B8C010074F6CC /* LaunchScreen.storyboard */,
 				0C697B48247C736E005F5E24 /* Events.storyboard */,
 			);
@@ -178,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				0C697B4B247C73CB005F5E24 /* EventsViewController.swift */,
+				A081D533247D3A5C0074966F /* EventsViewModel.swift */,
+				A081D535247D3A780074966F /* EventsRouter.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -409,7 +412,6 @@
 				0CE10259245B8C010074F6CC /* LaunchScreen.storyboard in Resources */,
 				0C697B50247C7819005F5E24 /* Images.xcassets in Resources */,
 				0C697B49247C736E005F5E24 /* Events.storyboard in Resources */,
-				0CE10254245B8BFE0074F6CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +558,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C18FE3B245C54E200960952 /* Session.swift in Sources */,
+				A081D536247D3A780074966F /* EventsRouter.swift in Sources */,
+				A081D534247D3A5C0074966F /* EventsViewModel.swift in Sources */,
 				0C0D920A245D91E600A4F2ED /* EventViewItem.swift in Sources */,
 				0C18FE39245C54C700960952 /* ModuleBuilderProtocol.swift in Sources */,
 				0CE1024D245B8BFE0074F6CC /* AppDelegate.swift in Sources */,
@@ -602,14 +606,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0CE10252245B8BFE0074F6CC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0CE10253245B8BFE0074F6CC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0CE10257245B8C010074F6CC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
