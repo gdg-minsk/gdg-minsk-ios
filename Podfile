@@ -9,23 +9,26 @@ target 'gdgminsk' do
   pod 'MVVMplusR', '~> 0.0.4'
 
   # DI
-  pod 'Swinject'
+  pod 'Swinject', '~> 2.7.1'
 
   # Reactive 
-  pod 'ReactiveCocoa'
-  pod 'ReactiveSwift'
+  pod 'ReactiveCocoa', '~> 10.3.0'
+  pod 'ReactiveSwift', '~> 6.3.0'
   
 
   # Code improvements
 
   # Gen 
-  pod 'SwiftGen'
+  pod 'SwiftGen', '~> 6.1.0'
 	
   # Lint
-  pod 'SwiftLint'
+  pod 'SwiftLint', '~> 0.39.2'
 
   target 'gdgminskTests' do
     inherit! :search_paths
+    
+    pod 'Nimble', '~> 8.0.9'
+    pod 'Quick', '~> 2.2.0'
   end
 
   target 'gdgminskUITests' do
