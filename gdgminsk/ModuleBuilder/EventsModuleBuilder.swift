@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import MVVMplusR
 
 final class EventsModuleBuilder: ModuleBuilderProtocol {
-    
+ 
     typealias ModuleViewType = EventsView
     
-    func makeModule(session: Session) -> ModuleViewType {
+    func makeModule(session: SessionType) -> ModuleViewType {
         let view = EventsView()
         let router = EventsRouter(view: view)
         let viewModel = EventsViewModel(session: session, router: router)
