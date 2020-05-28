@@ -14,7 +14,6 @@
 		0C0D9215245D92F400A4F2ED /* SpeakerViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D9214245D92F400A4F2ED /* SpeakerViewItem.swift */; };
 		0C0D9217245D930600A4F2ED /* MockSpeakerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D9216245D930600A4F2ED /* MockSpeakerService.swift */; };
 		0C18FE3B245C54E200960952 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18FE3A245C54E200960952 /* Session.swift */; };
-		0C36BF96245D94830086C219 /* SessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C36BF95245D94830086C219 /* SessionTests.swift */; };
 		0C36CE65245D97C0009C3853 /* GDGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C36CE64245D97C0009C3853 /* GDGUITests.swift */; };
 		0C697B49247C736E005F5E24 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C697B48247C736E005F5E24 /* Events.storyboard */; };
 		0C697B4C247C73CB005F5E24 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C697B4B247C73CB005F5E24 /* EventsView.swift */; };
@@ -27,6 +26,8 @@
 		A081D534247D3A5C0074966F /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D533247D3A5C0074966F /* EventsViewModel.swift */; };
 		A081D536247D3A780074966F /* EventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D535247D3A780074966F /* EventsRouter.swift */; };
 		A081D538247D3CDB0074966F /* EventsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D537247D3CDB0074966F /* EventsModuleBuilder.swift */; };
+		A0AC9398247FF59000714D6E /* EventsModuleBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC9397247FF59000714D6E /* EventsModuleBuilderSpec.swift */; };
+		A0AC939A247FF64500714D6E /* SessionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC9399247FF64500714D6E /* SessionSpecs.swift */; };
 		A0ECC4D8247D492700DA2B12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0ECC4D7247D492700DA2B12 /* Main.storyboard */; };
 		C8CA72E91673A39AB04C1445 /* Pods_gdgminskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C424E49DA05973A2C4866626 /* Pods_gdgminskTests.framework */; };
 /* End PBXBuildFile section */
@@ -56,7 +57,6 @@
 		0C0D9214245D92F400A4F2ED /* SpeakerViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpeakerViewItem.swift; path = gdgminsk/Service/SpeakerService/SpeakerViewItem.swift; sourceTree = SOURCE_ROOT; };
 		0C0D9216245D930600A4F2ED /* MockSpeakerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpeakerService.swift; sourceTree = "<group>"; };
 		0C18FE3A245C54E200960952 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		0C36BF95245D94830086C219 /* SessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTests.swift; sourceTree = "<group>"; };
 		0C36CE64245D97C0009C3853 /* GDGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDGUITests.swift; sourceTree = "<group>"; };
 		0C697B48247C736E005F5E24 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
 		0C697B4B247C73CB005F5E24 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
@@ -77,6 +77,8 @@
 		A081D533247D3A5C0074966F /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
 		A081D535247D3A780074966F /* EventsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRouter.swift; sourceTree = "<group>"; };
 		A081D537247D3CDB0074966F /* EventsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModuleBuilder.swift; sourceTree = "<group>"; };
+		A0AC9397247FF59000714D6E /* EventsModuleBuilderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModuleBuilderSpec.swift; sourceTree = "<group>"; };
+		A0AC9399247FF64500714D6E /* SessionSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSpecs.swift; sourceTree = "<group>"; };
 		A0ECC4D7247D492700DA2B12 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B2DEB4F48F9FE6C92817A552 /* Pods-gdgminsk-gdgminskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gdgminsk-gdgminskUITests.release.xcconfig"; path = "Target Support Files/Pods-gdgminsk-gdgminskUITests/Pods-gdgminsk-gdgminskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C424E49DA05973A2C4866626 /* Pods_gdgminskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gdgminskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -233,8 +235,8 @@
 		0CE10262245B8C010074F6CC /* gdgminskTests */ = {
 			isa = PBXGroup;
 			children = (
+				A0AC9394247FF55B00714D6E /* unit */,
 				0CE10265245B8C020074F6CC /* Info.plist */,
-				0C36BF95245D94830086C219 /* SessionTests.swift */,
 			);
 			path = gdgminskTests;
 			sourceTree = "<group>";
@@ -272,6 +274,31 @@
 				0C697B4D247C7802005F5E24 /* Images */,
 			);
 			path = Resourses;
+			sourceTree = "<group>";
+		};
+		A0AC9394247FF55B00714D6E /* unit */ = {
+			isa = PBXGroup;
+			children = (
+				A0AC9395247FF56400714D6E /* Core */,
+				A0AC9396247FF57700714D6E /* ModuleBuilder */,
+			);
+			path = unit;
+			sourceTree = "<group>";
+		};
+		A0AC9395247FF56400714D6E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A0AC9399247FF64500714D6E /* SessionSpecs.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A0AC9396247FF57700714D6E /* ModuleBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				A0AC9397247FF59000714D6E /* EventsModuleBuilderSpec.swift */,
+			);
+			path = ModuleBuilder;
 			sourceTree = "<group>";
 		};
 		EF1E2D67D50DE2F4D03256BF /* Frameworks */ = {
@@ -596,7 +623,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C36BF96245D94830086C219 /* SessionTests.swift in Sources */,
+				A0AC9398247FF59000714D6E /* EventsModuleBuilderSpec.swift in Sources */,
+				A0AC939A247FF64500714D6E /* SessionSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
