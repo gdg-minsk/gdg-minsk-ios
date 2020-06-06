@@ -14,7 +14,7 @@ final class SpeakersModuleBuilder: ModuleBuilderProtocol {
     typealias ModuleViewType = SpeakersView
     
     func makeModule(session: SessionType) -> SpeakersView {
-        let view = SpeakersView()
+        let view = StoryboardScene.Speakers.initialScene.instantiate()
         let router = SpeakersRouter(view: view)
         let viewModel = SpeakersViewModel(session: session, router: router)
         view.viewModel = viewModel

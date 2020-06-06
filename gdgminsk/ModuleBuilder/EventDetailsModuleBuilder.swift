@@ -14,7 +14,7 @@ final class EventDetailsModuleBuilder: ModuleBuilderProtocol {
     typealias ModuleViewType = EventDetailsView
     
     func makeModule(session: SessionType) -> EventDetailsView {
-        let view = EventDetailsView()
+        let view = StoryboardScene.EventDetails.initialScene.instantiate()
         let router = EventDetailsRouter(view: view)
         let viewModel = EventDetailsViewModel(session: session, router: router)
         view.viewModel = viewModel
