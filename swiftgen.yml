@@ -1,0 +1,16 @@
+output_dir: gdgminsk/Resources/Generated
+xcassets:
+  inputs: ['gdgminsk/Resources/Images/Images.xcassets']
+  outputs:
+    templateName: swift4
+    output: assets-images.swift
+ib:
+  inputs: ['gdgminsk/Storyboards/Events.storyboard',
+           'gdgminsk/Storyboards/EventDetails.storyboard',
+           'gdgminsk/Storyboards/Speakers.storyboard']
+  outputs:
+    templateName: scenes-swift4
+    output: storyboards.swift
+    params:
+      ignoreTargetModule: true
+      module: gdgminsk

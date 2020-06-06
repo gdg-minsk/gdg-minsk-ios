@@ -36,6 +36,8 @@
 		A00614DE248BA5500080D1B9 /* SpeakersModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00614DD248BA5500080D1B9 /* SpeakersModuleBuilder.swift */; };
 		A00614E0248BA5B40080D1B9 /* SpeakersModuleBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00614DF248BA5B40080D1B9 /* SpeakersModuleBuilderSpec.swift */; };
 		A00614E3248BA6C40080D1B9 /* EventDetailsRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00614E2248BA6C40080D1B9 /* EventDetailsRoutable.swift */; };
+		A06B9B8B248BBC2700799CCC /* assets-images.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06B9B89248BBC2700799CCC /* assets-images.swift */; };
+		A06B9B8C248BBC2700799CCC /* storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06B9B8A248BBC2700799CCC /* storyboards.swift */; };
 		A081D534247D3A5C0074966F /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D533247D3A5C0074966F /* EventsViewModel.swift */; };
 		A081D536247D3A780074966F /* EventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D535247D3A780074966F /* EventsRouter.swift */; };
 		A081D538247D3CDB0074966F /* EventsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D537247D3CDB0074966F /* EventsModuleBuilder.swift */; };
@@ -100,6 +102,8 @@
 		A00614DD248BA5500080D1B9 /* SpeakersModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersModuleBuilder.swift; sourceTree = "<group>"; };
 		A00614DF248BA5B40080D1B9 /* SpeakersModuleBuilderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersModuleBuilderSpec.swift; sourceTree = "<group>"; };
 		A00614E2248BA6C40080D1B9 /* EventDetailsRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsRoutable.swift; sourceTree = "<group>"; };
+		A06B9B89248BBC2700799CCC /* assets-images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "assets-images.swift"; sourceTree = "<group>"; };
+		A06B9B8A248BBC2700799CCC /* storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storyboards.swift; sourceTree = "<group>"; };
 		A081D533247D3A5C0074966F /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
 		A081D535247D3A780074966F /* EventsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRouter.swift; sourceTree = "<group>"; };
 		A081D537247D3CDB0074966F /* EventsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModuleBuilder.swift; sourceTree = "<group>"; };
@@ -257,7 +261,7 @@
 				0C18FE36245C549000960952 /* Model */,
 				0CE1027D245B8C210074F6CC /* Modules */,
 				0C697B47247C7347005F5E24 /* Storyboards */,
-				0CE1027E245B8C330074F6CC /* Resourses */,
+				0CE1027E245B8C330074F6CC /* Resources */,
 				0CE1025A245B8C010074F6CC /* Info.plist */,
 			);
 			path = gdgminsk;
@@ -301,12 +305,13 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		0CE1027E245B8C330074F6CC /* Resourses */ = {
+		0CE1027E245B8C330074F6CC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A06B9B88248BBC0300799CCC /* Generated */,
 				0C697B4D247C7802005F5E24 /* Images */,
 			);
-			path = Resourses;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A00614C9248BA1390080D1B9 /* EventDetails */ = {
@@ -335,6 +340,15 @@
 				A00614E2248BA6C40080D1B9 /* EventDetailsRoutable.swift */,
 			);
 			path = Routable;
+			sourceTree = "<group>";
+		};
+		A06B9B88248BBC0300799CCC /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				A06B9B89248BBC2700799CCC /* assets-images.swift */,
+				A06B9B8A248BBC2700799CCC /* storyboards.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		A0AC9394247FF55B00714D6E /* unit */ = {
@@ -398,8 +412,9 @@
 				0CE10245245B8BFE0074F6CC /* Sources */,
 				0CE10246245B8BFE0074F6CC /* Frameworks */,
 				0CE10247245B8BFE0074F6CC /* Resources */,
-				0C18FE3E245C6BAE00960952 /* SwiftLint */,
 				B9F3D0ADEEE3552508DF8A0F /* [CP] Embed Pods Frameworks */,
+				A00614E4248BB9FD0080D1B9 /* SwiftGen */,
+				0C18FE3E245C6BAE00960952 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -644,6 +659,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gdgminsk-gdgminskUITests/Pods-gdgminsk-gdgminskUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A00614E4248BB9FD0080D1B9 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n";
+		};
 		B9F3D0ADEEE3552508DF8A0F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -682,7 +715,9 @@
 				0C697B4C247C73CB005F5E24 /* EventsView.swift in Sources */,
 				0CE1024F245B8BFE0074F6CC /* SceneDelegate.swift in Sources */,
 				A00614CD248BA1520080D1B9 /* EventDetailsViewModel.swift in Sources */,
+				A06B9B8B248BBC2700799CCC /* assets-images.swift in Sources */,
 				0C0D9208245D91D200A4F2ED /* EventServiceProtocol.swift in Sources */,
+				A06B9B8C248BBC2700799CCC /* storyboards.swift in Sources */,
 				0C0D9217245D930600A4F2ED /* MockSpeakerService.swift in Sources */,
 				0C0D920C245D91F900A4F2ED /* MockEventService.swift in Sources */,
 				A00614E3248BA6C40080D1B9 /* EventDetailsRoutable.swift in Sources */,

@@ -10,7 +10,7 @@
         <!--Events View-->
         <scene sceneID="zCs-LU-w6V">
             <objects>
-                <viewController storyboardIdentifier="EventsViewController" id="q3G-u6-cMX" customClass="EventsView" customModule="gdgminsk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EventsView" id="q3G-u6-cMX" customClass="EventsView" customModule="gdgminsk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="snN-jj-f0N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

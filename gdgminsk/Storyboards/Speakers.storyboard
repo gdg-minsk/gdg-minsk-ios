@@ -10,7 +10,7 @@
         <!--Speakers View-->
         <scene sceneID="qbQ-j8-PO1">
             <objects>
-                <viewController id="Abn-dI-Cfc" customClass="SpeakersView" customModule="gdgminsk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SpeakersView" id="Abn-dI-Cfc" customClass="SpeakersView" customModule="gdgminsk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oah-Zd-9s1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
