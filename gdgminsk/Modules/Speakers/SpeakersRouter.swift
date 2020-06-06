@@ -9,6 +9,6 @@
 import Foundation
 import MVVMplusR
 
-final class SpeakersRouter: BaseRouter {
+final class SpeakersRouter: BaseRouter, EventDetailsRoutable {
     
 }
