@@ -1,5 +1,5 @@
 //
-//  EventDetailsView.swift
+//  SpeakersView.swift
 //  gdgminsk
 //
 //  Created by Anton Polyakov on 6/6/20.
@@ -9,7 +9,7 @@
 import UIKit
 import MVVMplusR
 
-final class EventDetailsView: BaseView<EventDetailsViewModel> {
+final class SpeakersView: BaseView<SpeakersViewModel> {
 
     // MARK: Lifecycle
 

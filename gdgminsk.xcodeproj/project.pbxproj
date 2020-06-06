@@ -28,6 +28,13 @@
 		A00614CD248BA1520080D1B9 /* EventDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00614CC248BA1520080D1B9 /* EventDetailsViewModel.swift */; };
 		A00614CF248BA15C0080D1B9 /* EventDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00614CE248BA15C0080D1B9 /* EventDetailsRouter.swift */; };
 		A00614D1248BA2700080D1B9 /* EventDetailsModuleBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00614D0248BA2700080D1B9 /* EventDetailsModuleBuilderSpec.swift */; };
+		A00614D4248BA3750080D1B9 /* EventDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00614D3248BA3750080D1B9 /* EventDetails.storyboard */; };
+		A00614D6248BA3AB0080D1B9 /* SpeakersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00614D5248BA3AB0080D1B9 /* SpeakersView.swift */; };
+		A00614D8248BA3B60080D1B9 /* SpeakersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00614D7248BA3B60080D1B9 /* SpeakersViewModel.swift */; };
+		A00614DA248BA46D0080D1B9 /* SpeakersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00614D9248BA46D0080D1B9 /* SpeakersRouter.swift */; };
+		A00614DC248BA5200080D1B9 /* Speakers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00614DB248BA5200080D1B9 /* Speakers.storyboard */; };
+		A00614DE248BA5500080D1B9 /* SpeakersModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00614DD248BA5500080D1B9 /* SpeakersModuleBuilder.swift */; };
+		A00614E0248BA5B40080D1B9 /* SpeakersModuleBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00614DF248BA5B40080D1B9 /* SpeakersModuleBuilderSpec.swift */; };
 		A081D534247D3A5C0074966F /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D533247D3A5C0074966F /* EventsViewModel.swift */; };
 		A081D536247D3A780074966F /* EventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D535247D3A780074966F /* EventsRouter.swift */; };
 		A081D538247D3CDB0074966F /* EventsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081D537247D3CDB0074966F /* EventsModuleBuilder.swift */; };
@@ -84,6 +91,13 @@
 		A00614CC248BA1520080D1B9 /* EventDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewModel.swift; sourceTree = "<group>"; };
 		A00614CE248BA15C0080D1B9 /* EventDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsRouter.swift; sourceTree = "<group>"; };
 		A00614D0248BA2700080D1B9 /* EventDetailsModuleBuilderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsModuleBuilderSpec.swift; sourceTree = "<group>"; };
+		A00614D3248BA3750080D1B9 /* EventDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventDetails.storyboard; sourceTree = "<group>"; };
+		A00614D5248BA3AB0080D1B9 /* SpeakersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersView.swift; sourceTree = "<group>"; };
+		A00614D7248BA3B60080D1B9 /* SpeakersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersViewModel.swift; sourceTree = "<group>"; };
+		A00614D9248BA46D0080D1B9 /* SpeakersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersRouter.swift; sourceTree = "<group>"; };
+		A00614DB248BA5200080D1B9 /* Speakers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Speakers.storyboard; sourceTree = "<group>"; };
+		A00614DD248BA5500080D1B9 /* SpeakersModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersModuleBuilder.swift; sourceTree = "<group>"; };
+		A00614DF248BA5B40080D1B9 /* SpeakersModuleBuilderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersModuleBuilderSpec.swift; sourceTree = "<group>"; };
 		A081D533247D3A5C0074966F /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
 		A081D535247D3A780074966F /* EventsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRouter.swift; sourceTree = "<group>"; };
 		A081D537247D3CDB0074966F /* EventsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModuleBuilder.swift; sourceTree = "<group>"; };
@@ -148,6 +162,7 @@
 			children = (
 				A081D537247D3CDB0074966F /* EventsModuleBuilder.swift */,
 				A00614C7248BA1160080D1B9 /* EventDetailsModuleBuilder.swift */,
+				A00614DD248BA5500080D1B9 /* SpeakersModuleBuilder.swift */,
 			);
 			path = ModuleBuilder;
 			sourceTree = "<group>";
@@ -184,6 +199,8 @@
 				0CE10257245B8C010074F6CC /* LaunchScreen.storyboard */,
 				0C697B48247C736E005F5E24 /* Events.storyboard */,
 				A0ECC4D7247D492700DA2B12 /* Main.storyboard */,
+				A00614D3248BA3750080D1B9 /* EventDetails.storyboard */,
+				A00614DB248BA5200080D1B9 /* Speakers.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -274,6 +291,7 @@
 		0CE1027D245B8C210074F6CC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A00614D2248BA3590080D1B9 /* Speakers */,
 				A00614C9248BA1390080D1B9 /* EventDetails */,
 				0C697B4A247C73BC005F5E24 /* Events */,
 			);
@@ -298,6 +316,16 @@
 			path = EventDetails;
 			sourceTree = "<group>";
 		};
+		A00614D2248BA3590080D1B9 /* Speakers */ = {
+			isa = PBXGroup;
+			children = (
+				A00614D5248BA3AB0080D1B9 /* SpeakersView.swift */,
+				A00614D7248BA3B60080D1B9 /* SpeakersViewModel.swift */,
+				A00614D9248BA46D0080D1B9 /* SpeakersRouter.swift */,
+			);
+			path = Speakers;
+			sourceTree = "<group>";
+		};
 		A0AC9394247FF55B00714D6E /* unit */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +348,7 @@
 			children = (
 				A0AC9397247FF59000714D6E /* EventsModuleBuilderSpec.swift */,
 				A00614D0248BA2700080D1B9 /* EventDetailsModuleBuilderSpec.swift */,
+				A00614DF248BA5B40080D1B9 /* SpeakersModuleBuilderSpec.swift */,
 			);
 			path = ModuleBuilder;
 			sourceTree = "<group>";
@@ -460,7 +489,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00614DC248BA5200080D1B9 /* Speakers.storyboard in Resources */,
 				0CE10259245B8C010074F6CC /* LaunchScreen.storyboard in Resources */,
+				A00614D4248BA3750080D1B9 /* EventDetails.storyboard in Resources */,
 				0C697B50247C7819005F5E24 /* Images.xcassets in Resources */,
 				0C697B49247C736E005F5E24 /* Events.storyboard in Resources */,
 				A0ECC4D8247D492700DA2B12 /* Main.storyboard in Resources */,
@@ -626,10 +657,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00614D6248BA3AB0080D1B9 /* SpeakersView.swift in Sources */,
 				0C18FE3B245C54E200960952 /* Session.swift in Sources */,
 				A081D536247D3A780074966F /* EventsRouter.swift in Sources */,
 				A081D534247D3A5C0074966F /* EventsViewModel.swift in Sources */,
 				A00614C8248BA1160080D1B9 /* EventDetailsModuleBuilder.swift in Sources */,
+				A00614D8248BA3B60080D1B9 /* SpeakersViewModel.swift in Sources */,
+				A00614DA248BA46D0080D1B9 /* SpeakersRouter.swift in Sources */,
 				0C0D920A245D91E600A4F2ED /* EventViewItem.swift in Sources */,
 				0CE1024D245B8BFE0074F6CC /* AppDelegate.swift in Sources */,
 				A081D538247D3CDB0074966F /* EventsModuleBuilder.swift in Sources */,
@@ -643,6 +677,7 @@
 				A00614CB248BA1460080D1B9 /* EventDetailsView.swift in Sources */,
 				A00614CF248BA15C0080D1B9 /* EventDetailsRouter.swift in Sources */,
 				0C0D9213245D92DF00A4F2ED /* SpeakerServiceProtocol.swift in Sources */,
+				A00614DE248BA5500080D1B9 /* SpeakersModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +685,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00614E0248BA5B40080D1B9 /* SpeakersModuleBuilderSpec.swift in Sources */,
 				A0AC9398247FF59000714D6E /* EventsModuleBuilderSpec.swift in Sources */,
 				A0AC939A247FF64500714D6E /* SessionSpecs.swift in Sources */,
 				A00614D1248BA2700080D1B9 /* EventDetailsModuleBuilderSpec.swift in Sources */,
