@@ -9,6 +9,6 @@
 import Foundation
 import MVVMplusR
 
-final class EventsRouter: BaseRouter {
+final class EventsRouter: BaseRouter, EventDetailsRoutable {
     
 }

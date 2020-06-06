@@ -9,6 +9,6 @@
 import Foundation
 import MVVMplusR
 
-final class EventsViewModel: BaseViewModel<EventsRouter> {
+final class EventsViewModel: BaseViewModel<EventsRouter>, ItemsViewModelProtocol {
     
 }

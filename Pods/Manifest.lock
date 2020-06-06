@@ -1,5 +1,5 @@
 PODS:
-  - MVVMplusR (0.0.6)
+  - MVVMplusR (0.0.8)
   - Nimble (8.0.9)
   - Quick (2.2.0)
   - ReactiveCocoa (10.3.0):
@@ -10,7 +10,7 @@ PODS:
   - Swinject (2.7.1)
 
 DEPENDENCIES:
-  - MVVMplusR (~> 0.0.6)
+  - MVVMplusR (~> 0.0.8)
   - Nimble (~> 8.0.9)
   - Quick (~> 2.2.0)
   - ReactiveCocoa (~> 10.3.0)
@@ -31,7 +31,7 @@ SPEC REPOS:
     - Swinject
 
 SPEC CHECKSUMS:
-  MVVMplusR: 78eaf04485ec68f10053ff84934989015e545479
+  MVVMplusR: b95682ea7d204f9074222a6dc7724b2ac9cb38bb
   Nimble: 98b888285a615fd34f20e61753cf58ea1402bde4
   Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
   ReactiveCocoa: 083ae559e6f588ce519cab412ea119b431c26a24
@@ -40,6 +40,6 @@ SPEC CHECKSUMS:
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: d25c73335dcbf0e613ab3ef23b2a75b903a964fc
+PODFILE CHECKSUM: 84f6cd9c39197fb67f3e4c112a33d88cd5fc66e0
 
 COCOAPODS: 1.8.4
