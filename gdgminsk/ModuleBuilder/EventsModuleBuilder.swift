@@ -13,7 +13,7 @@ final class EventsModuleBuilder: ModuleBuilderProtocol {
  
     typealias ModuleViewType = EventsView
     
-    func makeModule(session: SessionType) -> ModuleViewType {
+    func makeModule(session: SessionType) -> EventsView {
         let view = EventsView()
         let router = EventsRouter(view: view)
         let viewModel = EventsViewModel(session: session, router: router)

@@ -51,10 +51,10 @@
 
 /* Begin PBXFileReference section */
 		0C0D9207245D91D200A4F2ED /* EventServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceProtocol.swift; sourceTree = "<group>"; };
-		0C0D9209245D91E600A4F2ED /* EventViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventViewItem.swift; path = gdgminsk/Service/EventService/EventViewItem.swift; sourceTree = SOURCE_ROOT; };
+		0C0D9209245D91E600A4F2ED /* EventViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventViewItem.swift; path = gdgminsk/Model/EventViewItem.swift; sourceTree = SOURCE_ROOT; };
 		0C0D920B245D91F900A4F2ED /* MockEventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEventService.swift; sourceTree = "<group>"; };
 		0C0D9212245D92DF00A4F2ED /* SpeakerServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerServiceProtocol.swift; sourceTree = "<group>"; };
-		0C0D9214245D92F400A4F2ED /* SpeakerViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpeakerViewItem.swift; path = gdgminsk/Service/SpeakerService/SpeakerViewItem.swift; sourceTree = SOURCE_ROOT; };
+		0C0D9214245D92F400A4F2ED /* SpeakerViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpeakerViewItem.swift; path = gdgminsk/Model/SpeakerViewItem.swift; sourceTree = SOURCE_ROOT; };
 		0C0D9216245D930600A4F2ED /* MockSpeakerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpeakerService.swift; sourceTree = "<group>"; };
 		0C18FE3A245C54E200960952 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		0C36CE64245D97C0009C3853 /* GDGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDGUITests.swift; sourceTree = "<group>"; };
