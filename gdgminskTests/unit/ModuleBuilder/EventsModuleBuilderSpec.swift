@@ -12,10 +12,10 @@ import Nimble
 
 class EventsModuleBuilderSpec: QuickSpec {
     
-    let session = Session()
+    private let session = Session()
     
     override func spec() {
-        context("The 'Events make module'") {
+        context("The 'EventsModuleBuilder make module'") {
             let eventsView = EventsModuleBuilder().makeModule(session: session)
             
             it("should have injected viewModel") {
