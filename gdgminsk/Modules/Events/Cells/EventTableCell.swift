@@ -8,6 +8,9 @@
 
 import UIKit
 
-class EventTableCell: UITableViewCell {
+final class EventTableCell: UITableViewCell {
     
+    func bind(_ item: EventViewItem) {
+        
+    }
 }

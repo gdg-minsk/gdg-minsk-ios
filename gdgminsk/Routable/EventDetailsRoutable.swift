@@ -18,7 +18,8 @@ protocol EventDetailsRoutable {
 extension EventDetailsRoutable where Self: RouterType {
     
     func goToEventDetails() {
-//        let eventDetailView = EventDetailsModuleBuilder().makeModule(session: session)
-        self.view?.navigationController?.pushViewController(EventsView(), animated: true)
+        guard let session = session else { return }
+        let eventDetailView = EventDetailsModuleBuilder().makeModule(session: session)
+        self.view?.navigationController?.pushViewController(eventDetailView, animated: true)
     }
 }

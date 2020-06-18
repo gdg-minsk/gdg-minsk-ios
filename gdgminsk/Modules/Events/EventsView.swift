@@ -13,14 +13,6 @@ final class EventsView: BaseView<EventsViewModel> {
 
     @IBOutlet private weak var eventsTableView: UITableView!
 
-    // MARK: Lifecycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
     override func setup() {
         super.setup()
         eventsTableView.register(EventTableCell.nib, forCellReuseIdentifier: EventTableCell.identifier)
@@ -38,10 +30,15 @@ extension EventsView: UITableViewDelegate {
 extension EventsView: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel?.items?.count ?? 0
+        return viewModel?.items.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let item = viewModel?.item(at: indexPath.row),
+        let cell = tableView.dequeueReusableCell(withIdentifier: EventTableCell.identifier, for: indexPath) as? EventTableCell else {
+            return UITableViewCell()
+        }
+        cell.bind(item)
+        return cell
     }
 }

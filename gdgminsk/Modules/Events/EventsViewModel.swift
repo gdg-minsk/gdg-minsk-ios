@@ -11,4 +11,15 @@ import MVVMplusR
 
 final class EventsViewModel: BaseViewModel<EventsRouter>, ItemsViewModelProtocol {
     
+    typealias Item = EventViewItem
+    
+    private(set) var items: [Item] = []
+}
+
+public extension ItemsViewModelProtocol {
+    
+    func item(at rowIndex: Int) -> Item? {
+        guard rowIndex >= 0, items.count > rowIndex else { return nil }
+        return items[rowIndex]
+    }
 }
