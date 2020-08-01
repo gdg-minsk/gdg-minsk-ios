@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import ReactiveSwift
+import RxSwift
 
 protocol SpeakerServiceProtocol {
 
-    func getSpeakers() -> SignalProducer<[SpeakerViewItem], Error>
+    func getSpeakers() -> Single<[SpeakerViewItem]>
 }

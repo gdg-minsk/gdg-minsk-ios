@@ -12,10 +12,10 @@ target 'gdgminsk' do
   pod 'Swinject', '~> 2.7.1'
 
   # Reactive 
-  pod 'ReactiveCocoa', '~> 10.3.0'
-  pod 'ReactiveSwift', '~> 6.3.0'
+  pod 'RxSwift', '~> 5.1.1'
+  pod 'RxCocoa', '~> 5.1.1'
   
-
+  
   # Code improvements
 
   # Gen 

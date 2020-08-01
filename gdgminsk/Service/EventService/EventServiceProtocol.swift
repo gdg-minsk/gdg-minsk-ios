@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import ReactiveSwift
+import RxSwift
 
 protocol EventServiceProtocol {
 
-    func getEvents() -> SignalProducer<[EventViewItem], Error>
+    func getEvents() -> Single<[EventViewItem]>
 }

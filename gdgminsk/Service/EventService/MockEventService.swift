@@ -7,11 +7,14 @@
 //
 
 import Foundation
-import ReactiveSwift
+import RxSwift
 
 final class MockEventService: EventServiceProtocol {
 
-    func getEvents() -> SignalProducer<[EventViewItem], Error> {
-        return SignalProducer(value: [])
+    func getEvents() -> Single<[EventViewItem]> {
+        return Single<[EventViewItem]>.create { single in
+            single(.success([]))
+            return Disposables.create()
+        }
     }
 }

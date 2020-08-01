@@ -7,11 +7,14 @@
 //
 
 import Foundation
-import ReactiveSwift
+import RxSwift
 
 final class MockSpeakerService: SpeakerServiceProtocol {
 
-    func getSpeakers() -> SignalProducer<[SpeakerViewItem], Error> {
-        return SignalProducer(value: [])
+    func getSpeakers() -> Single<[SpeakerViewItem]> {
+        return Single<[SpeakerViewItem]>.create { single in
+            single(.success([]))
+            return Disposables.create()
+        }
     }
 }
