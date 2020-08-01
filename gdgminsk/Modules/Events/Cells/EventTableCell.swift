@@ -10,6 +10,14 @@ import UIKit
 
 final class EventTableCell: UITableViewCell {
     
+}
+
+// MARK: TableCellDataBindable
+
+extension EventTableCell: TableCellDataBindable {
+        
+    typealias ViewItem = EventViewItem
+    
     func bind(_ item: EventViewItem) {
         
     }

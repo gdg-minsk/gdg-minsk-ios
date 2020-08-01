@@ -9,9 +9,39 @@
 import Foundation
 import MVVMplusR
 
-final class EventsViewModel: BaseViewModel<EventsRouter>, ItemsViewModelProtocol {
+final class EventsViewModel: BaseViewModel<EventsRouter> {
     
-    typealias Item = EventViewItem
+    // MARK: Properties
     
-    private(set) var items: [Item] = []
+    private let eventService: EventServiceProtocol?
+    
+    // MARK: Init
+    
+    override init(session: SessionType? = nil, router: EventsRouter? = nil) {
+        self.eventService = session?.resolve()
+        super.init(session: session, router: router)
+    }
+}
+
+// MARK: ViewModelTransformable
+
+extension EventsViewModel: ViewModelTransformable {
+
+    typealias Input = EventsViewModel.ViewModelInput
+    typealias Output = EventsViewModel.ViewModelOutput
+    
+    func transform(_ input: Input) -> Output {
+        return Output()
+    }
+}
+
+// MARK: ViewModel Input & Output
+
+extension EventsViewModel {
+    
+    struct ViewModelInput {
+    }
+    
+    struct ViewModelOutput {
+    }
 }

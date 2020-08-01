@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00B8902F24D56CF700DDBE54 /* TableCellDataBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B8902E24D56CF700DDBE54 /* TableCellDataBindable.swift */; };
 		0C081C12248C56380080C976 /* EventTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C081C10248C56380080C976 /* EventTableCell.swift */; };
 		0C081C13248C56380080C976 /* EventTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C081C11248C56380080C976 /* EventTableCell.xib */; };
 		0C081C16248C56BA0080C976 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C081C15248C56BA0080C976 /* UITableViewCellExtensions.swift */; };
@@ -67,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00B8902E24D56CF700DDBE54 /* TableCellDataBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellDataBindable.swift; sourceTree = "<group>"; };
 		0C081C10248C56380080C976 /* EventTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableCell.swift; sourceTree = "<group>"; };
 		0C081C11248C56380080C976 /* EventTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableCell.xib; sourceTree = "<group>"; };
 		0C081C15248C56BA0080C976 /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
@@ -149,6 +151,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00B8902D24D56C9000DDBE54 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0C081C14248C569F0080C976 /* Extensions */,
+				00B8902E24D56CF700DDBE54 /* TableCellDataBindable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		0C081C0F248C56160080C976 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,7 +292,7 @@
 				0C18FE34245C546E00960952 /* ModuleBuilder */,
 				0C18FE36245C549000960952 /* Model */,
 				0CE1027D245B8C210074F6CC /* Modules */,
-				0C081C14248C569F0080C976 /* Extensions */,
+				00B8902D24D56C9000DDBE54 /* Utils */,
 				0C697B47247C7347005F5E24 /* Storyboards */,
 				0CE1027E245B8C330074F6CC /* Resources */,
 				0CE1025A245B8C010074F6CC /* Info.plist */,
@@ -738,6 +749,7 @@
 				0C081C12248C56380080C976 /* EventTableCell.swift in Sources */,
 				0CE1024F245B8BFE0074F6CC /* SceneDelegate.swift in Sources */,
 				A00614CD248BA1520080D1B9 /* EventDetailsViewModel.swift in Sources */,
+				00B8902F24D56CF700DDBE54 /* TableCellDataBindable.swift in Sources */,
 				A06B9B8B248BBC2700799CCC /* assets-images.swift in Sources */,
 				0C0D9208245D91D200A4F2ED /* EventServiceProtocol.swift in Sources */,
 				A06B9B8C248BBC2700799CCC /* storyboards.swift in Sources */,

@@ -10,35 +10,27 @@ import UIKit
 import MVVMplusR
 
 final class EventsView: BaseView<EventsViewModel> {
+    
+    // MARK: Properties
+    
+    @IBOutlet weak private var tableView: UITableView!
 
-    @IBOutlet private weak var eventsTableView: UITableView!
-
+    // MARK: Overrides
+    
     override func setup() {
         super.setup()
-        eventsTableView.register(EventTableCell.nib, forCellReuseIdentifier: EventTableCell.identifier)
+        setupTableView()
     }
-}
-
-// MARK: UITableViewDelegate
-
-extension EventsView: UITableViewDelegate {
-
-}
-
-// MARK: UITableViewDataSource
-
-extension EventsView: UITableViewDataSource {
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel?.items.count ?? 0
+    
+    override func bindViewModel() {
+        super.bindViewModel()
+        
     }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let item = viewModel?.item(at: indexPath.row),
-        let cell = tableView.dequeueReusableCell(withIdentifier: EventTableCell.identifier, for: indexPath) as? EventTableCell else {
-            return UITableViewCell()
-        }
-        cell.bind(item)
-        return cell
+    
+    // MARK: Private
+    
+    private func setupTableView() {
+        tableView.register(EventTableCell.nib, forCellReuseIdentifier: EventTableCell.identifier)
+        tableView.rowHeight = UITableView.automaticDimension
     }
 }
