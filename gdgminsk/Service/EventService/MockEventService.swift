@@ -13,7 +13,7 @@ final class MockEventService: EventServiceProtocol {
 
     func getEvents() -> Single<[EventViewItem]> {
         return Single<[EventViewItem]>.create { single in
-            single(.success([]))
+            single(.success([.init(), .init()]))
             return Disposables.create()
         }
     }

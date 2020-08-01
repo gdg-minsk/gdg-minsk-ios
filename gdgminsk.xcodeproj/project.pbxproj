@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00B8902F24D56CF700DDBE54 /* TableCellDataBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B8902E24D56CF700DDBE54 /* TableCellDataBindable.swift */; };
+		00B8903124D5762E00DDBE54 /* ObservableTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B8903024D5762E00DDBE54 /* ObservableTypeExtensions.swift */; };
 		0C081C12248C56380080C976 /* EventTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C081C10248C56380080C976 /* EventTableCell.swift */; };
 		0C081C13248C56380080C976 /* EventTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C081C11248C56380080C976 /* EventTableCell.xib */; };
 		0C081C16248C56BA0080C976 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C081C15248C56BA0080C976 /* UITableViewCellExtensions.swift */; };
@@ -69,6 +70,7 @@
 
 /* Begin PBXFileReference section */
 		00B8902E24D56CF700DDBE54 /* TableCellDataBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellDataBindable.swift; sourceTree = "<group>"; };
+		00B8903024D5762E00DDBE54 /* ObservableTypeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTypeExtensions.swift; sourceTree = "<group>"; };
 		0C081C10248C56380080C976 /* EventTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableCell.swift; sourceTree = "<group>"; };
 		0C081C11248C56380080C976 /* EventTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableCell.xib; sourceTree = "<group>"; };
 		0C081C15248C56BA0080C976 /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				0C081C15248C56BA0080C976 /* UITableViewCellExtensions.swift */,
+				00B8903024D5762E00DDBE54 /* ObservableTypeExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -742,6 +745,7 @@
 				A00614D8248BA3B60080D1B9 /* SpeakersViewModel.swift in Sources */,
 				A00614DA248BA46D0080D1B9 /* SpeakersRouter.swift in Sources */,
 				0C0D920A245D91E600A4F2ED /* EventViewItem.swift in Sources */,
+				00B8903124D5762E00DDBE54 /* ObservableTypeExtensions.swift in Sources */,
 				0CE1024D245B8BFE0074F6CC /* AppDelegate.swift in Sources */,
 				A081D538247D3CDB0074966F /* EventsModuleBuilder.swift in Sources */,
 				0C0D9215245D92F400A4F2ED /* SpeakerViewItem.swift in Sources */,

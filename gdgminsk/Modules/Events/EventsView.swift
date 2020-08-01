@@ -8,13 +8,16 @@
 
 import UIKit
 import MVVMplusR
+import RxSwift
 
 final class EventsView: BaseView<EventsViewModel> {
     
     // MARK: Properties
     
     @IBOutlet weak private var tableView: UITableView!
-
+    
+    private let disposeBag = DisposeBag()
+    
     // MARK: Overrides
     
     override func setup() {
@@ -24,6 +27,20 @@ final class EventsView: BaseView<EventsViewModel> {
     
     override func bindViewModel() {
         super.bindViewModel()
+        guard let viewModel = viewModel else { return }
+        
+        let viewWillAppear = rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
+            .mapToVoid()
+            .asDriverOnErrorJustComplete()
+        
+        let output = viewModel.transform(EventsViewModel.Input(
+            dataRefreshTrigger: viewWillAppear
+        ))
+        
+        output.events.drive(tableView.rx.items(cellIdentifier: EventTableCell.identifier,
+                                               cellType: EventTableCell.self)) { _, item, cell in
+            cell.bind(item)
+        }.disposed(by: disposeBag)
         
     }
     

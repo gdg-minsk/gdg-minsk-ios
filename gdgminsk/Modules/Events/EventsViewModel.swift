@@ -8,6 +8,8 @@
 
 import Foundation
 import MVVMplusR
+import RxSwift
+import RxCocoa
 
 final class EventsViewModel: BaseViewModel<EventsRouter> {
     
@@ -31,7 +33,9 @@ extension EventsViewModel: ViewModelTransformable {
     typealias Output = EventsViewModel.ViewModelOutput
     
     func transform(_ input: Input) -> Output {
-        return Output()
+        return Output(
+            events: .just([.init(),.init()])
+        )
     }
 }
 
@@ -40,8 +44,10 @@ extension EventsViewModel: ViewModelTransformable {
 extension EventsViewModel {
     
     struct ViewModelInput {
+        let dataRefreshTrigger: Driver<Void>
     }
     
     struct ViewModelOutput {
+        let events: Driver<[EventViewItem]>
     }
 }
