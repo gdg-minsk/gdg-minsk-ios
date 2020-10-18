@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window?.windowScene = windowScene
         let session = Session()
         self.session = session
-        let eventsView = EventsModuleBuilder().makeModule(session: session)
+        let eventsView = EventsSceneBuilder().makeScene(session: session)
         window?.rootViewController = eventsView
         window?.makeKeyAndVisible()
     }

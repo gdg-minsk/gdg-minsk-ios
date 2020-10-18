@@ -11,5 +11,5 @@ import RxSwift
 
 protocol SpeakerServiceProtocol {
 
-    func getSpeakers() -> Single<[SpeakerViewItem]>
+    func getSpeakers() -> Single<[Speaker]>
 }

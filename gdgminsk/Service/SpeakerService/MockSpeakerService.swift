@@ -11,8 +11,8 @@ import RxSwift
 
 final class MockSpeakerService: SpeakerServiceProtocol {
 
-    func getSpeakers() -> Single<[SpeakerViewItem]> {
-        return Single<[SpeakerViewItem]>.create { single in
+    func getSpeakers() -> Single<[Speaker]> {
+        return Single<[Speaker]>.create { single in
             single(.success([]))
             return Disposables.create()
         }

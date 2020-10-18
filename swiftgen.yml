@@ -5,9 +5,7 @@ xcassets:
     templateName: swift4
     output: assets-images.swift
 ib:
-  inputs: ['gdgminsk/Storyboards/Events.storyboard',
-           'gdgminsk/Storyboards/EventDetails.storyboard',
-           'gdgminsk/Storyboards/Speakers.storyboard']
+  inputs: ['gdgminsk/']
   outputs:
     templateName: scenes-swift4
     output: storyboards.swift

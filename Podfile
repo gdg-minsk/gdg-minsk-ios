@@ -6,7 +6,7 @@ target 'gdgminsk' do
   use_frameworks!
 
   # Core
-  pod 'MVVMplusR', '~> 0.1.0'
+  pod 'MVVMplusR', '~> 0.1.1'
 
   # DI
   pod 'Swinject', '~> 2.7.1'
@@ -19,7 +19,7 @@ target 'gdgminsk' do
   # Code improvements
 
   # Gen 
-  pod 'SwiftGen', '~> 6.1.0'
+  pod 'SwiftGen', '~> 6.4.0'
 	
   # Lint
   pod 'SwiftLint', '~> 0.39.2'

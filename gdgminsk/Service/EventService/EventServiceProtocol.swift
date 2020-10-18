@@ -11,5 +11,5 @@ import RxSwift
 
 protocol EventServiceProtocol {
 
-    func getEvents() -> Single<[EventViewItem]>
+    func getEvents() -> Single<[Event]>
 }

@@ -11,8 +11,8 @@ import RxSwift
 
 final class MockEventService: EventServiceProtocol {
 
-    func getEvents() -> Single<[EventViewItem]> {
-        return Single<[EventViewItem]>.create { single in
+    func getEvents() -> Single<[Event]> {
+        return Single<[Event]>.create { single in
             single(.success([.init(), .init()]))
             return Disposables.create()
         }
