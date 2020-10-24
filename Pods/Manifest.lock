@@ -1,4 +1,5 @@
 PODS:
+  - BonMot (5.6.0)
   - MVVMplusR (0.1.1)
   - Nimble (8.0.9)
   - Quick (2.2.1)
@@ -8,43 +9,50 @@ PODS:
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
+  - SnapKit (5.0.1)
   - SwiftGen (6.4.0)
   - SwiftLint (0.39.2)
   - Swinject (2.7.1)
 
 DEPENDENCIES:
+  - BonMot (~> 5.6.0)
   - MVVMplusR (~> 0.1.1)
   - Nimble (~> 8.0.9)
   - Quick (~> 2.2.0)
   - RxCocoa (~> 5.1.1)
   - RxSwift (~> 5.1.1)
+  - SnapKit (~> 5.0.1)
   - SwiftGen (~> 6.4.0)
   - SwiftLint (~> 0.39.2)
   - Swinject (~> 2.7.1)
 
 SPEC REPOS:
   trunk:
+    - BonMot
     - MVVMplusR
     - Nimble
     - Quick
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SnapKit
     - SwiftGen
     - SwiftLint
     - Swinject
 
 SPEC CHECKSUMS:
+  BonMot: 2217a66e5ddc6a8d2ffb759fe8c85a8528e0d3e7
   MVVMplusR: e81a75e192dea4d69021b7b797eb0da73aae2e4e
   Nimble: 98b888285a615fd34f20e61753cf58ea1402bde4
   Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: d73fe74e50724c9b6cc6de9b05d2b8a8c01325f9
+PODFILE CHECKSUM: 7975eb0f28704068e64232af2a573e6b9f223110
 
 COCOAPODS: 1.9.3

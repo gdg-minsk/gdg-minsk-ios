@@ -15,6 +15,10 @@ target 'gdgminsk' do
   pod 'RxSwift', '~> 5.1.1'
   pod 'RxCocoa', '~> 5.1.1'
   
+  #UI
+  pod 'SnapKit', '~> 5.0.1'
+  pod 'BonMot', '~> 5.6.0'
+  
   
   # Code improvements
 
