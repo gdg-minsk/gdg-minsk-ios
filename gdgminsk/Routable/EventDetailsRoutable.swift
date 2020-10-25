@@ -19,7 +19,7 @@ extension EventDetailsRoutable where Self: RouterType {
     
     func goToEventDetails() {
         guard let session = session else { return }
-        let eventDetailView = EventDetailsModuleBuilder().makeModule(session: session)
+        let eventDetailView = EventDetailsSceneBuilder().makeScene(session: session)
         self.view?.navigationController?.pushViewController(eventDetailView, animated: true)
     }
 }

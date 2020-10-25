@@ -1,5 +1,5 @@
 //
-//  EventDetailsModuleBuilderSpec.swift
+//  EventDetailsSceneBuilderSpec.swift
 //  gdgminskTests
 //
 //  Created by Anton Polyakov on 6/6/20.
@@ -10,13 +10,13 @@ import Quick
 import Nimble
 @testable import gdgminsk
 
-class EventDetailsModuleBuilderSpec: QuickSpec {
+class EventDetailsSceneBuilderSpec: QuickSpec {
     
     private let session = Session()
     
     override func spec() {
-        context("The 'EventDetailsModuleBuilder make module'") {
-            let eventDetailsView = EventDetailsModuleBuilder().makeModule(session: session)
+        context("The 'EventDetailsSceneBuilder make scene'") {
+            let eventDetailsView = EventDetailsSceneBuilder().makeScene(session: session)
             
             it("should have injected viewModel") {
                 expect(eventDetailsView.viewModel).toNot(beNil())

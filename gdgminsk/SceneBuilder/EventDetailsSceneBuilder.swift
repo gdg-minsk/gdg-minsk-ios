@@ -9,7 +9,7 @@
 import Foundation
 import MVVMplusR
 
-final class EventDetailsModuleBuilder: SceneBuilderProtocol {
+final class EventDetailsSceneBuilder: SceneBuilderProtocol {
  
     typealias SceneViewType = EventDetailsView
     

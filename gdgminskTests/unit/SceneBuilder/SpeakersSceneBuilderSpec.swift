@@ -1,5 +1,5 @@
 //
-//  SpeakersModuleBuilderSpec.swift
+//  SpeakersSceneBuilderSpec.swift
 //  gdgminskTests
 //
 //  Created by Anton Polyakov on 6/6/20.
@@ -10,13 +10,13 @@ import Quick
 import Nimble
 @testable import gdgminsk
 
-class SpeakersModuleBuilderSpec: QuickSpec {
+class SpeakersSceneBuilderSpec: QuickSpec {
     
     private let session = Session()
     
     override func spec() {
-        context("The 'SpeakersModuleBuilder make module'") {
-            let speakersView = SpeakersModuleBuilder().makeModule(session: session)
+        context("The 'SpeakersSceneBuilder make scene'") {
+            let speakersView = SpeakersSceneBuilder().makeScene(session: session)
             
             it("should have injected viewModel") {
                 expect(speakersView.viewModel).toNot(beNil())
