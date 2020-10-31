@@ -1,0 +1,16 @@
+
+// MARK: - Events
+
+"events.title" = "Events";
+
+// MARK: - Speakers
+
+"speakers.title" = "Speakers";
+
+// MARK: - Tickets
+
+"tickets.title" = "Tickets";
+
+// MARK: - Profile
+
+"profile.title" = "profile";

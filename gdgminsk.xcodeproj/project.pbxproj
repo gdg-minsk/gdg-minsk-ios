@@ -27,6 +27,8 @@
 		00A7ABED2544FE1900D807DA /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00A7ABD62544FE0B00D807DA /* Roboto-Medium.ttf */; };
 		00B8902F24D56CF700DDBE54 /* TableCellDataBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B8902E24D56CF700DDBE54 /* TableCellDataBindable.swift */; };
 		00B8903124D5762E00DDBE54 /* ObservableType+gdgminsk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B8903024D5762E00DDBE54 /* ObservableType+gdgminsk.swift */; };
+		00EF24B4254CEE68003289D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00EF24B6254CEE68003289D3 /* Localizable.strings */; };
+		00EF24BC254CEF29003289D3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00EF24BB254CEF29003289D3 /* Colors.xcassets */; };
 		0C081C12248C56380080C976 /* EventTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C081C10248C56380080C976 /* EventTableCell.swift */; };
 		0C081C13248C56380080C976 /* EventTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C081C11248C56380080C976 /* EventTableCell.xib */; };
 		0C081C16248C56BA0080C976 /* UITableViewCell+gdgminsk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C081C15248C56BA0080C976 /* UITableViewCell+gdgminsk.swift */; };
@@ -107,6 +109,8 @@
 		00A7ABDB2544FE0B00D807DA /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		00B8902E24D56CF700DDBE54 /* TableCellDataBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellDataBindable.swift; sourceTree = "<group>"; };
 		00B8903024D5762E00DDBE54 /* ObservableType+gdgminsk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+gdgminsk.swift"; sourceTree = "<group>"; };
+		00EF24B5254CEE68003289D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00EF24BB254CEF29003289D3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		0C081C10248C56380080C976 /* EventTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableCell.swift; sourceTree = "<group>"; };
 		0C081C11248C56380080C976 /* EventTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableCell.xib; sourceTree = "<group>"; };
 		0C081C15248C56BA0080C976 /* UITableViewCell+gdgminsk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+gdgminsk.swift"; sourceTree = "<group>"; };
@@ -221,6 +225,22 @@
 				00B8902E24D56CF700DDBE54 /* TableCellDataBindable.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		00EF249D254CEC25003289D3 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				00EF24B6254CEE68003289D3 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		00EF24BA254CEF18003289D3 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				00EF24BB254CEF29003289D3 /* Colors.xcassets */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 		0C081C0F248C56160080C976 /* Cells */ = {
@@ -395,6 +415,8 @@
 		0CE1027E245B8C330074F6CC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				00EF24BA254CEF18003289D3 /* Colors */,
+				00EF249D254CEC25003289D3 /* Localization */,
 				00A7ABC92544FDBA00D807DA /* Fonts */,
 				A06B9B88248BBC0300799CCC /* Generated */,
 				0C697B4D247C7802005F5E24 /* Images */,
@@ -615,10 +637,12 @@
 				00A7ABE12544FE1900D807DA /* RobotoCondensed-LightItalic.ttf in Resources */,
 				00A7ABED2544FE1900D807DA /* Roboto-Medium.ttf in Resources */,
 				00A7ABE42544FE1900D807DA /* Roboto-BlackItalic.ttf in Resources */,
+				00EF24B4254CEE68003289D3 /* Localizable.strings in Resources */,
 				0C697B50247C7819005F5E24 /* Images.xcassets in Resources */,
 				0C697B49247C736E005F5E24 /* Events.storyboard in Resources */,
 				00A7ABEC2544FE1900D807DA /* Roboto-LightItalic.ttf in Resources */,
 				00A7ABE22544FE1900D807DA /* Roboto-Black.ttf in Resources */,
+				00EF24BC254CEF29003289D3 /* Colors.xcassets in Resources */,
 				0C081C13248C56380080C976 /* EventTableCell.xib in Resources */,
 				00A7ABE32544FE1900D807DA /* Roboto-Italic.ttf in Resources */,
 				00A7ABE62544FE1900D807DA /* RobotoCondensed-Bold.ttf in Resources */,
@@ -875,6 +899,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		00EF24B6254CEE68003289D3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00EF24B5254CEE68003289D3 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		0CE10257245B8C010074F6CC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
