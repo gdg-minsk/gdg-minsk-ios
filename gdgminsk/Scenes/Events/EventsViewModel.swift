@@ -33,8 +33,14 @@ extension EventsViewModel: ViewModelTransformable {
     typealias Output = EventsViewModel.ViewModelOutput
     
     func transform(_ input: Input) -> Output {
+        let viewLoadedTrigger = input.viewLoaded
+            .flatMapLatest { [eventService] in
+                eventService?.loadEvents().asDriverOnErrorJustComplete() ?? .empty()
+            }
+        
         return Output(
-            events: .just([.init(),.init()])
+            viewLoadedTrigger: viewLoadedTrigger,
+            eventsStates: eventService?.eventsStates.asDriverOnErrorJustComplete() ?? .empty()
         )
     }
 }
@@ -44,10 +50,11 @@ extension EventsViewModel: ViewModelTransformable {
 extension EventsViewModel {
     
     struct ViewModelInput {
-        let dataRefreshTrigger: Driver<Void>
+        let viewLoaded: Driver<Void>
     }
     
     struct ViewModelOutput {
-        let events: Driver<[Event]>
+        let viewLoadedTrigger: Driver<Void>
+        let eventsStates: Driver<[EventTableCell.State]>
     }
 }

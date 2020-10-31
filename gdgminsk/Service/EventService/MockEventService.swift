@@ -10,11 +10,16 @@ import Foundation
 import RxSwift
 
 final class MockEventService: EventServiceProtocol {
-
-    func getEvents() -> Single<[Event]> {
-        return Single<[Event]>.create { single in
-            single(.success([.init(), .init()]))
-            return Disposables.create()
-        }
+    
+    private let eventsStatesSubject = PublishSubject<[EventTableCell.State]>()
+    
+    // MARK: - Public
+    
+    var eventsStates: Observable<[EventTableCell.State]> {
+        eventsStatesSubject.asObserver()
+    }
+    
+    func loadEvents() -> Observable<Void> {
+        .empty()
     }
 }

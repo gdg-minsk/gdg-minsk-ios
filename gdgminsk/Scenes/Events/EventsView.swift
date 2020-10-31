@@ -16,6 +16,7 @@ final class EventsView: BaseView<EventsViewModel> {
     
     @IBOutlet weak private var tableView: UITableView!
     
+    private var tableDataSource = EventsTableSource()
     private let disposeBag = DisposeBag()
     
     // MARK: Overrides
@@ -28,26 +29,23 @@ final class EventsView: BaseView<EventsViewModel> {
     override func bindViewModel() {
         super.bindViewModel()
         guard let viewModel = viewModel else { return }
-        
-        let viewWillAppear = rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
-            .mapToVoid()
-            .asDriverOnErrorJustComplete()
-        
+                
         let output = viewModel.transform(EventsViewModel.Input(
-            dataRefreshTrigger: viewWillAppear
+            viewLoaded: rx.viewWillAppear.take(1).mapToVoid().asDriverOnErrorJustComplete()
         ))
         
-        output.events.drive(tableView.rx.items(cellIdentifier: EventTableCell.identifier,
-                                               cellType: EventTableCell.self)) { _, item, cell in
-            cell.bind(item)
-        }.disposed(by: disposeBag)
-        
+        disposeBag.insert(
+            output.viewLoadedTrigger.drive(),
+            output.eventsStates.drive(tableDataSource.rx.events)
+        )
     }
     
     // MARK: Private
     
     private func setupTableView() {
-        tableView.register(EventTableCell.nib, forCellReuseIdentifier: EventTableCell.identifier)
+        tableDataSource.register(tableView)
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.tableFooterView = UIView()
+        tableView.separatorStyle = .none
     }
 }

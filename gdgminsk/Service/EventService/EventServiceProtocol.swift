@@ -10,6 +10,8 @@ import Foundation
 import RxSwift
 
 protocol EventServiceProtocol {
-
-    func getEvents() -> Single<[Event]>
+    
+    var eventsStates: Observable<[EventTableCell.State]> { get }
+    
+    func loadEvents() -> Observable<Void>
 }
