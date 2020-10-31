@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		002E8741254DC6DE005A804D /* UILabel+Rx+gdgminsk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002E8740254DC6DE005A804D /* UILabel+Rx+gdgminsk.swift */; };
+		002E874D254DCD4A005A804D /* EventsTableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002E874C254DCD4A005A804D /* EventsTableSource.swift */; };
 		00A7ABDC2544FE1900D807DA /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00A7ABDB2544FE0B00D807DA /* RobotoCondensed-Regular.ttf */; };
 		00A7ABDD2544FE1900D807DA /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00A7ABD32544FE0B00D807DA /* RobotoCondensed-Light.ttf */; };
 		00A7ABDE2544FE1900D807DA /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00A7ABD22544FE0B00D807DA /* Roboto-Thin.ttf */; };
@@ -91,6 +92,7 @@
 
 /* Begin PBXFileReference section */
 		002E8740254DC6DE005A804D /* UILabel+Rx+gdgminsk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Rx+gdgminsk.swift"; sourceTree = "<group>"; };
+		002E874C254DCD4A005A804D /* EventsTableSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableSource.swift; sourceTree = "<group>"; };
 		00A7ABCA2544FE0B00D807DA /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
 		00A7ABCB2544FE0B00D807DA /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
 		00A7ABCC2544FE0B00D807DA /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 				0C697B4B247C73CB005F5E24 /* EventsView.swift */,
 				A081D533247D3A5C0074966F /* EventsViewModel.swift */,
 				A081D535247D3A780074966F /* EventsRouter.swift */,
+				002E874C254DCD4A005A804D /* EventsTableSource.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -858,6 +861,7 @@
 				002E8741254DC6DE005A804D /* UILabel+Rx+gdgminsk.swift in Sources */,
 				A06B9B8C248BBC2700799CCC /* storyboards.swift in Sources */,
 				0C0D9217245D930600A4F2ED /* MockSpeakerService.swift in Sources */,
+				002E874D254DCD4A005A804D /* EventsTableSource.swift in Sources */,
 				0C0D920C245D91F900A4F2ED /* MockEventService.swift in Sources */,
 				A00614E3248BA6C40080D1B9 /* EventDetailsRoutable.swift in Sources */,
 				A00614CB248BA1460080D1B9 /* EventDetailsView.swift in Sources */,
