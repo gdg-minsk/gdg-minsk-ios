@@ -12,3 +12,8 @@ ib:
     params:
       ignoreTargetModule: true
       module: gdgminsk
+fonts:
+  inputs: ['gdgminsk/Resources/Fonts']
+  outputs:
+    templateName: swift5
+    output: Fonts.swift
