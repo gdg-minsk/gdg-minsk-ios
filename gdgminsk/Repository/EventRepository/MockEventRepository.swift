@@ -1,5 +1,5 @@
 //
-//  MockEventService.swift
+//  MockEventRepository.swift
 //  gdgminsk
 //
 //  Created by Anton Polyakov on 5/2/20.
@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 
-final class MockEventService: EventServiceProtocol {
+final class MockEventRepository: EventRepositoryProtocol {
     
     private let eventsStatesSubject = PublishSubject<[EventTableCell.State]>()
     

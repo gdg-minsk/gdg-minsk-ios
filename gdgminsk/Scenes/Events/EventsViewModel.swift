@@ -13,11 +13,11 @@ import RxCocoa
 
 final class EventsViewModel: BaseViewModel<EventsRouter> {
     
-    // MARK: Properties
+    // MARK: - Properties
     
-    private let eventService: EventServiceProtocol?
+    private let eventService: EventRepositoryProtocol?
     
-    // MARK: Init
+    // MARK: - Init
     
     override init(session: SessionType? = nil, router: EventsRouter? = nil) {
         self.eventService = session?.resolve()
@@ -25,7 +25,7 @@ final class EventsViewModel: BaseViewModel<EventsRouter> {
     }
 }
 
-// MARK: ViewModelTransformable
+// MARK: - ViewModelTransformable
 
 extension EventsViewModel: ViewModelTransformable {
 
@@ -45,7 +45,7 @@ extension EventsViewModel: ViewModelTransformable {
     }
 }
 
-// MARK: ViewModel Input & Output
+// MARK: - ViewModel Input & Output
 
 extension EventsViewModel {
     

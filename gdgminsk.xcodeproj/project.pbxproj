@@ -36,12 +36,12 @@
 		0C081C12248C56380080C976 /* EventTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C081C10248C56380080C976 /* EventTableCell.swift */; };
 		0C081C13248C56380080C976 /* EventTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C081C11248C56380080C976 /* EventTableCell.xib */; };
 		0C081C16248C56BA0080C976 /* UITableViewCell+gdgminsk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C081C15248C56BA0080C976 /* UITableViewCell+gdgminsk.swift */; };
-		0C0D9208245D91D200A4F2ED /* EventServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D9207245D91D200A4F2ED /* EventServiceProtocol.swift */; };
+		0C0D9208245D91D200A4F2ED /* EventRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D9207245D91D200A4F2ED /* EventRepositoryProtocol.swift */; };
 		0C0D920A245D91E600A4F2ED /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D9209245D91E600A4F2ED /* Event.swift */; };
-		0C0D920C245D91F900A4F2ED /* MockEventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D920B245D91F900A4F2ED /* MockEventService.swift */; };
-		0C0D9213245D92DF00A4F2ED /* SpeakerServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D9212245D92DF00A4F2ED /* SpeakerServiceProtocol.swift */; };
+		0C0D920C245D91F900A4F2ED /* MockEventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D920B245D91F900A4F2ED /* MockEventRepository.swift */; };
+		0C0D9213245D92DF00A4F2ED /* SpeakerRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D9212245D92DF00A4F2ED /* SpeakerRepositoryProtocol.swift */; };
 		0C0D9215245D92F400A4F2ED /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D9214245D92F400A4F2ED /* Speaker.swift */; };
-		0C0D9217245D930600A4F2ED /* MockSpeakerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D9216245D930600A4F2ED /* MockSpeakerService.swift */; };
+		0C0D9217245D930600A4F2ED /* MockSpeakerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D9216245D930600A4F2ED /* MockSpeakerRepository.swift */; };
 		0C18FE3B245C54E200960952 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C18FE3A245C54E200960952 /* Session.swift */; };
 		0C36CE65245D97C0009C3853 /* GDGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C36CE64245D97C0009C3853 /* GDGUITests.swift */; };
 		0C697B49247C736E005F5E24 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C697B48247C736E005F5E24 /* Events.storyboard */; };
@@ -122,12 +122,12 @@
 		0C081C10248C56380080C976 /* EventTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableCell.swift; sourceTree = "<group>"; };
 		0C081C11248C56380080C976 /* EventTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableCell.xib; sourceTree = "<group>"; };
 		0C081C15248C56BA0080C976 /* UITableViewCell+gdgminsk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+gdgminsk.swift"; sourceTree = "<group>"; };
-		0C0D9207245D91D200A4F2ED /* EventServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceProtocol.swift; sourceTree = "<group>"; };
+		0C0D9207245D91D200A4F2ED /* EventRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRepositoryProtocol.swift; sourceTree = "<group>"; };
 		0C0D9209245D91E600A4F2ED /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Event.swift; path = gdgminsk/Model/Event.swift; sourceTree = SOURCE_ROOT; };
-		0C0D920B245D91F900A4F2ED /* MockEventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEventService.swift; sourceTree = "<group>"; };
-		0C0D9212245D92DF00A4F2ED /* SpeakerServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerServiceProtocol.swift; sourceTree = "<group>"; };
+		0C0D920B245D91F900A4F2ED /* MockEventRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEventRepository.swift; sourceTree = "<group>"; };
+		0C0D9212245D92DF00A4F2ED /* SpeakerRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerRepositoryProtocol.swift; sourceTree = "<group>"; };
 		0C0D9214245D92F400A4F2ED /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Speaker.swift; path = gdgminsk/Model/Speaker.swift; sourceTree = SOURCE_ROOT; };
-		0C0D9216245D930600A4F2ED /* MockSpeakerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpeakerService.swift; sourceTree = "<group>"; };
+		0C0D9216245D930600A4F2ED /* MockSpeakerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpeakerRepository.swift; sourceTree = "<group>"; };
 		0C18FE3A245C54E200960952 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		0C36CE64245D97C0009C3853 /* GDGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDGUITests.swift; sourceTree = "<group>"; };
 		0C697B48247C736E005F5E24 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
@@ -271,22 +271,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		0C0D9206245D91C500A4F2ED /* EventService */ = {
+		0C0D9206245D91C500A4F2ED /* EventRepository */ = {
 			isa = PBXGroup;
 			children = (
-				0C0D9207245D91D200A4F2ED /* EventServiceProtocol.swift */,
-				0C0D920B245D91F900A4F2ED /* MockEventService.swift */,
+				0C0D9207245D91D200A4F2ED /* EventRepositoryProtocol.swift */,
+				0C0D920B245D91F900A4F2ED /* MockEventRepository.swift */,
 			);
-			path = EventService;
+			path = EventRepository;
 			sourceTree = "<group>";
 		};
-		0C0D9211245D92CC00A4F2ED /* SpeakerService */ = {
+		0C0D9211245D92CC00A4F2ED /* SpeakerRepository */ = {
 			isa = PBXGroup;
 			children = (
-				0C0D9212245D92DF00A4F2ED /* SpeakerServiceProtocol.swift */,
-				0C0D9216245D930600A4F2ED /* MockSpeakerService.swift */,
+				0C0D9212245D92DF00A4F2ED /* SpeakerRepositoryProtocol.swift */,
+				0C0D9216245D930600A4F2ED /* MockSpeakerRepository.swift */,
 			);
-			path = SpeakerService;
+			path = SpeakerRepository;
 			sourceTree = "<group>";
 		};
 		0C18FE34245C546E00960952 /* SceneBuilder */ = {
@@ -299,13 +299,13 @@
 			path = SceneBuilder;
 			sourceTree = "<group>";
 		};
-		0C18FE35245C548100960952 /* Service */ = {
+		0C18FE35245C548100960952 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				0C0D9211245D92CC00A4F2ED /* SpeakerService */,
-				0C0D9206245D91C500A4F2ED /* EventService */,
+				0C0D9211245D92CC00A4F2ED /* SpeakerRepository */,
+				0C0D9206245D91C500A4F2ED /* EventRepository */,
 			);
-			path = Service;
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		0C18FE36245C549000960952 /* Model */ = {
@@ -373,7 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				0CE1027C245B8C150074F6CC /* App */,
-				0C18FE35245C548100960952 /* Service */,
+				0C18FE35245C548100960952 /* Repository */,
 				A00614E1248BA69B0080D1B9 /* Routable */,
 				0C18FE34245C546E00960952 /* SceneBuilder */,
 				0C18FE36245C549000960952 /* Model */,
@@ -863,18 +863,18 @@
 				A00614CD248BA1520080D1B9 /* EventDetailsViewModel.swift in Sources */,
 				00B8902F24D56CF700DDBE54 /* CellDataBindable.swift in Sources */,
 				A06B9B8B248BBC2700799CCC /* assets-images.swift in Sources */,
-				0C0D9208245D91D200A4F2ED /* EventServiceProtocol.swift in Sources */,
+				0C0D9208245D91D200A4F2ED /* EventRepositoryProtocol.swift in Sources */,
 				002E8741254DC6DE005A804D /* UILabel+Rx+gdgminsk.swift in Sources */,
 				A06B9B8C248BBC2700799CCC /* storyboards.swift in Sources */,
-				0C0D9217245D930600A4F2ED /* MockSpeakerService.swift in Sources */,
+				0C0D9217245D930600A4F2ED /* MockSpeakerRepository.swift in Sources */,
 				002E874D254DCD4A005A804D /* EventsTableSource.swift in Sources */,
-				0C0D920C245D91F900A4F2ED /* MockEventService.swift in Sources */,
+				0C0D920C245D91F900A4F2ED /* MockEventRepository.swift in Sources */,
 				002E8757254DD4A3005A804D /* EventsTableSource+Rx.swift in Sources */,
 				A00614E3248BA6C40080D1B9 /* EventDetailsRoutable.swift in Sources */,
 				A00614CB248BA1460080D1B9 /* EventDetailsView.swift in Sources */,
 				A00614CF248BA15C0080D1B9 /* EventDetailsRouter.swift in Sources */,
 				0C081C16248C56BA0080C976 /* UITableViewCell+gdgminsk.swift in Sources */,
-				0C0D9213245D92DF00A4F2ED /* SpeakerServiceProtocol.swift in Sources */,
+				0C0D9213245D92DF00A4F2ED /* SpeakerRepositoryProtocol.swift in Sources */,
 				A00614DE248BA5500080D1B9 /* SpeakersSceneBuilder.swift in Sources */,
 				002E8752254DD070005A804D /* UIViewController+Rx+gdgminsk.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  SpeakerServiceProtocol.swift
+//  SpeakerRepositoryProtocol.swift
 //  gdgminsk
 //
 //  Created by Anton Polyakov on 5/2/20.
@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 
-protocol SpeakerServiceProtocol {
+protocol SpeakerRepositoryProtocol {
 
     func getSpeakers() -> Single<[Speaker]>
 }

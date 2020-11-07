@@ -1,5 +1,5 @@
 //
-//  MockSpeakerService.swift
+//  MockSpeakerRepository.swift
 //  gdgminsk
 //
 //  Created by Anton Polyakov on 5/2/20.
@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 
-final class MockSpeakerService: SpeakerServiceProtocol {
+final class MockSpeakerRepository: SpeakerRepositoryProtocol {
 
     func getSpeakers() -> Single<[Speaker]> {
         return Single<[Speaker]>.create { single in

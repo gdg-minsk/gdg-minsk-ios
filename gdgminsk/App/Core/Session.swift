@@ -11,26 +11,32 @@ import Swinject
 import MVVMplusR
 
 final class Session {
-
-    /// Dependency container
+    
+    // MARK: - Properties
+    
     private let container = Container()
 
+    // MARK: - Init
+    
     init() {
         registerAppServices()
     }
 
-    // MARK: Private
+    // MARK: - Private
 
-    /// Register services to DI Container
     private func registerAppServices() {
-        // Event service
-        container.register(EventServiceProtocol.self) { _ -> EventServiceProtocol in
-            return MockEventService()
+        registerRepositories()
+    }
+    
+    private func registerRepositories() {
+        // Event repository
+        container.register(EventRepositoryProtocol.self) { _ -> EventRepositoryProtocol in
+            return MockEventRepository()
         }.inObjectScope(.container)
 
-        // Speaker service
-        container.register(SpeakerServiceProtocol.self) { _ -> SpeakerServiceProtocol in
-            return MockSpeakerService()
+        // Speaker repository
+        container.register(SpeakerRepositoryProtocol.self) { _ -> SpeakerRepositoryProtocol in
+            return MockSpeakerRepository()
         }.inObjectScope(.container)
     }
 }

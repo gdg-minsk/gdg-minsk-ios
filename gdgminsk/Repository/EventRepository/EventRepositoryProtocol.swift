@@ -1,5 +1,5 @@
 //
-//  EventServiceProtocol.swift
+//  EventRepositoryProtocol.swift
 //  gdgminsk
 //
 //  Created by Anton Polyakov on 5/2/20.
@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 
-protocol EventServiceProtocol {
+protocol EventRepositoryProtocol {
     
     var eventsStates: Observable<[EventTableCell.State]> { get }
     
