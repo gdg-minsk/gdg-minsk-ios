@@ -31,6 +31,8 @@
 		00A7ABED2544FE1900D807DA /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00A7ABD62544FE0B00D807DA /* Roboto-Medium.ttf */; };
 		00B8902F24D56CF700DDBE54 /* CellDataBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B8902E24D56CF700DDBE54 /* CellDataBindable.swift */; };
 		00B8903124D5762E00DDBE54 /* ObservableType+gdgminsk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B8903024D5762E00DDBE54 /* ObservableType+gdgminsk.swift */; };
+		00E9842D255685E700BB4646 /* EventUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9842C255685E700BB4646 /* EventUseCaseProtocol.swift */; };
+		00E98435255685F300BB4646 /* EventUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E98434255685F300BB4646 /* EventUseCase.swift */; };
 		00EF24B4254CEE68003289D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00EF24B6254CEE68003289D3 /* Localizable.strings */; };
 		00EF24BC254CEF29003289D3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00EF24BB254CEF29003289D3 /* Colors.xcassets */; };
 		0C081C12248C56380080C976 /* EventTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C081C10248C56380080C976 /* EventTableCell.swift */; };
@@ -117,6 +119,8 @@
 		00A7ABDB2544FE0B00D807DA /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		00B8902E24D56CF700DDBE54 /* CellDataBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDataBindable.swift; sourceTree = "<group>"; };
 		00B8903024D5762E00DDBE54 /* ObservableType+gdgminsk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+gdgminsk.swift"; sourceTree = "<group>"; };
+		00E9842C255685E700BB4646 /* EventUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventUseCaseProtocol.swift; sourceTree = "<group>"; };
+		00E98434255685F300BB4646 /* EventUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventUseCase.swift; sourceTree = "<group>"; };
 		00EF24B5254CEE68003289D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		00EF24BB254CEF29003289D3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		0C081C10248C56380080C976 /* EventTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableCell.swift; sourceTree = "<group>"; };
@@ -233,6 +237,23 @@
 				00B8902E24D56CF700DDBE54 /* CellDataBindable.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		00E9842A2556858300BB4646 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				00E9842B255685C800BB4646 /* EventUseCase */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		00E9842B255685C800BB4646 /* EventUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				00E9842C255685E700BB4646 /* EventUseCaseProtocol.swift */,
+				00E98434255685F300BB4646 /* EventUseCase.swift */,
+			);
+			path = EventUseCase;
 			sourceTree = "<group>";
 		};
 		00EF249D254CEC25003289D3 /* Localization */ = {
@@ -373,6 +394,7 @@
 			isa = PBXGroup;
 			children = (
 				0CE1027C245B8C150074F6CC /* App */,
+				00E9842A2556858300BB4646 /* UseCases */,
 				0C18FE35245C548100960952 /* Repository */,
 				A00614E1248BA69B0080D1B9 /* Routable */,
 				0C18FE34245C546E00960952 /* SceneBuilder */,
@@ -845,9 +867,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E9842D255685E700BB4646 /* EventUseCaseProtocol.swift in Sources */,
 				A00614D6248BA3AB0080D1B9 /* SpeakersView.swift in Sources */,
 				0C18FE3B245C54E200960952 /* Session.swift in Sources */,
 				A081D536247D3A780074966F /* EventsRouter.swift in Sources */,
+				00E98435255685F300BB4646 /* EventUseCase.swift in Sources */,
 				A081D534247D3A5C0074966F /* EventsViewModel.swift in Sources */,
 				A00614C8248BA1160080D1B9 /* EventDetailsSceneBuilder.swift in Sources */,
 				A00614D8248BA3B60080D1B9 /* SpeakersViewModel.swift in Sources */,

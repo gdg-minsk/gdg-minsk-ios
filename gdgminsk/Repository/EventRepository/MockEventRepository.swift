@@ -11,15 +11,9 @@ import RxSwift
 
 final class MockEventRepository: EventRepositoryProtocol {
     
-    private let eventsStatesSubject = PublishSubject<[EventTableCell.State]>()
-    
     // MARK: - Public
     
-    var eventsStates: Observable<[EventTableCell.State]> {
-        eventsStatesSubject.asObserver()
-    }
-    
-    func loadEvents() -> Observable<Void> {
-        .empty()
+    func events() -> Single<[Event]> {
+        Single.just([])
     }
 }

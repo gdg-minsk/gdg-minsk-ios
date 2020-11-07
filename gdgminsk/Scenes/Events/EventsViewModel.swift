@@ -15,12 +15,12 @@ final class EventsViewModel: BaseViewModel<EventsRouter> {
     
     // MARK: - Properties
     
-    private let eventService: EventRepositoryProtocol?
+    private let eventUseCase: EventUseCaseProtocol?
     
     // MARK: - Init
     
     override init(session: SessionType? = nil, router: EventsRouter? = nil) {
-        self.eventService = session?.resolve()
+        self.eventUseCase = session?.resolve()
         super.init(session: session, router: router)
     }
 }
@@ -33,14 +33,16 @@ extension EventsViewModel: ViewModelTransformable {
     typealias Output = EventsViewModel.ViewModelOutput
     
     func transform(_ input: Input) -> Output {
-        let viewLoadedTrigger = input.viewLoaded
-            .flatMapLatest { [eventService] in
-                eventService?.loadEvents().asDriverOnErrorJustComplete() ?? .empty()
+        let eventsLoadTrigger = input.viewLoaded
+            .flatMapLatest { [eventUseCase] in
+                eventUseCase?.loadEvents().asDriverOnErrorJustComplete() ?? .empty()
             }
         
+        let eventsStates: Driver<[EventTableCell.State]> = eventUseCase?.eventsStates.asDriverOnErrorJustComplete() ?? .empty()
+        
         return Output(
-            viewLoadedTrigger: viewLoadedTrigger,
-            eventsStates: eventService?.eventsStates.asDriverOnErrorJustComplete() ?? .empty()
+            eventsLoadTrigger: eventsLoadTrigger,
+            eventsStates: eventsStates
         )
     }
 }
@@ -54,7 +56,7 @@ extension EventsViewModel {
     }
     
     struct ViewModelOutput {
-        let viewLoadedTrigger: Driver<Void>
+        let eventsLoadTrigger: Driver<Void>
         let eventsStates: Driver<[EventTableCell.State]>
     }
 }

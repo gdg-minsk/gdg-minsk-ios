@@ -10,7 +10,9 @@ import Foundation
 import RxSwift
 
 final class MockSpeakerRepository: SpeakerRepositoryProtocol {
-
+    
+    // MARK: - Public
+    
     func getSpeakers() -> Single<[Speaker]> {
         return Single<[Speaker]>.create { single in
             single(.success([]))
