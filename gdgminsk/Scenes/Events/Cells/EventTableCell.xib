@@ -75,7 +75,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="adressLabel" destination="Rbw-ZW-mSx" id="OWR-Ds-3BU"/>
+                <outlet property="addressLabel" destination="Rbw-ZW-mSx" id="VJa-Sk-fER"/>
                 <outlet property="dateLabel" destination="UdG-gn-RhC" id="QMC-He-Za2"/>
                 <outlet property="monthLabel" destination="U1U-da-VUK" id="0a3-5H-MHy"/>
                 <outlet property="titleLabel" destination="1vS-Oy-OCO" id="3RM-7i-f0H"/>

@@ -15,10 +15,10 @@ final class EventTableCell: UITableViewCell {
     @IBOutlet weak private var titleLabel: UILabel!
     @IBOutlet weak private var dateLabel: UILabel!
     @IBOutlet weak private var monthLabel: UILabel!
-    @IBOutlet weak private var adressLabel: UILabel!
+    @IBOutlet weak private var addressLabel: UILabel!
 }
 
-// MARK: CellDataBindable
+// MARK: - CellDataBindable
 
 extension EventTableCell: CellDataBindable {
         
@@ -28,7 +28,7 @@ extension EventTableCell: CellDataBindable {
         titleLabel.text = item.title
         dateLabel.text = item.date
         monthLabel.text = item.month
-        adressLabel.text = item.adress
+        addressLabel.text = item.adress
     }
 }
 
@@ -37,9 +37,9 @@ extension EventTableCell: CellDataBindable {
 extension EventTableCell {
     
     struct State {
-        var title: String?
-        var date: String?
-        var month: String
-        var adress: String
+        let title: String
+        let date: String
+        let month: String
+        let adress: String
     }
 }
