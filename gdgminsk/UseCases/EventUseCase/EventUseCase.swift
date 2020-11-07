@@ -16,11 +16,13 @@ final class EventUseCase: EventUseCaseProtocol {
     private let eventRepository: EventRepositoryProtocol
     private let eventsStatesSubject = PublishSubject<[EventTableCell.State]>()
     
-    // MARK: - Public
+    // MARK: - Init
     
     init(eventRepository: EventRepositoryProtocol) {
         self.eventRepository = eventRepository
     }
+    
+    // MARK: - Public
     
     var eventsStates: Observable<[EventTableCell.State]> {
         eventsStatesSubject.asObserver()

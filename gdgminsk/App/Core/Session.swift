@@ -19,24 +19,31 @@ final class Session {
     // MARK: - Init
     
     init() {
-        registerAppServices()
+        registerRepositories()
+        registerUseCases()
     }
 
     // MARK: - Private
-
-    private func registerAppServices() {
-        registerRepositories()
-    }
     
     private func registerRepositories() {
-        // Event repository
+        // Event Repository
         container.register(EventRepositoryProtocol.self) { _ -> EventRepositoryProtocol in
             return MockEventRepository()
         }.inObjectScope(.container)
 
-        // Speaker repository
+        // Speaker Repository
         container.register(SpeakerRepositoryProtocol.self) { _ -> SpeakerRepositoryProtocol in
             return MockSpeakerRepository()
+        }.inObjectScope(.container)
+    }
+    
+    private func registerUseCases() {
+        // Event UseCase
+        container.register(EventUseCaseProtocol.self) { resolver -> EventUseCaseProtocol in
+            guard let eventRepository = resolver.resolve(EventRepositoryProtocol.self) else {
+                fatalError("EventRepositoryProtocol is not registered")
+            }
+            return EventUseCase(eventRepository: eventRepository)
         }.inObjectScope(.container)
     }
 }
