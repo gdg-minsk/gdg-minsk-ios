@@ -33,15 +33,12 @@ extension EventsViewModel: ViewModelTransformable {
     typealias Output = EventsViewModel.ViewModelOutput
     
     func transform(_ input: Input) -> Output {
-        let eventsLoadTrigger = input.viewLoaded
-            .flatMapLatest { [eventUseCase] in
-                eventUseCase?.loadEvents().asDriverOnErrorJustComplete() ?? .empty()
+        let eventsStates = input.viewLoaded
+            .flatMap { [weak self] in
+                self?.eventUseCase?.loadEvents().asDriverOnErrorJustComplete() ?? .empty()
             }
         
-        let eventsStates: Driver<[EventTableCell.State]> = eventUseCase?.eventsStates.asDriverOnErrorJustComplete() ?? .empty()
-        
         return Output(
-            eventsLoadTrigger: eventsLoadTrigger,
             eventsStates: eventsStates
         )
     }
@@ -56,7 +53,6 @@ extension EventsViewModel {
     }
     
     struct ViewModelOutput {
-        let eventsLoadTrigger: Driver<Void>
         let eventsStates: Driver<[EventTableCell.State]>
     }
 }

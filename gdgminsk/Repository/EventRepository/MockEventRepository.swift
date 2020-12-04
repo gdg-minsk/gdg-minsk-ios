@@ -14,6 +14,21 @@ final class MockEventRepository: EventRepositoryProtocol {
     // MARK: - Public
     
     func events() -> Single<[Event]> {
-        Single.just([])
+        Single.just([
+            .init(title: "GDG Minsk Cloud Meetup",
+                  date: Date(),
+                  place: "SPACE",
+                  address: "ул. Октябрьская 16/4"),
+            
+            .init(title: "GDG Minsk Cloud Meetup 1",
+                  date: Date(),
+                  place: "SPACE",
+                  address: "ул. Октябрьская 16/4"),
+            
+            .init(title: "GDG Minsk Cloud Meetup 2",
+                  date: Date(),
+                  place: "SPACE",
+                  address: "ул. Октябрьская 16/4")
+        ])
     }
 }

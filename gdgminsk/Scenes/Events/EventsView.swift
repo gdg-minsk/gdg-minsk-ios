@@ -35,7 +35,6 @@ final class EventsView: BaseView<EventsViewModel> {
         ))
         
         disposeBag.insert(
-            output.eventsLoadTrigger.drive(),
             output.eventsStates.drive(tableDataSource.rx.events)
         )
     }

@@ -14,7 +14,6 @@ final class EventUseCase: EventUseCaseProtocol {
     // MARK: - Properties
     
     private let eventRepository: EventRepositoryProtocol
-    private let eventsStatesSubject = PublishSubject<[EventTableCell.State]>()
     
     // MARK: - Init
     
@@ -24,13 +23,16 @@ final class EventUseCase: EventUseCaseProtocol {
     
     // MARK: - Public
     
-    var eventsStates: Observable<[EventTableCell.State]> {
-        eventsStatesSubject.asObserver()
-    }
-    
-    func loadEvents() -> Observable<Void> {
+    func loadEvents() -> Observable<[EventTableCell.State]> {
         eventRepository.events()
             .asObservable()
-            .mapToVoid()
+            .map {
+                $0.map {
+                    EventTableCell.State(title: $0.title,
+                                         date: "28",
+                                         month: "January",
+                                         adress: "ул. Октябрьская 16/4 (SPACE)")
+                }
+            }
     }
 }

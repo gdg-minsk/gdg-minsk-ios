@@ -10,8 +10,6 @@ import Foundation
 import RxSwift
 
 protocol EventUseCaseProtocol {
-    
-    var eventsStates: Observable<[EventTableCell.State]> { get }
-    
-    func loadEvents() -> Observable<Void>
+        
+    func loadEvents() -> Observable<[EventTableCell.State]>
 }
