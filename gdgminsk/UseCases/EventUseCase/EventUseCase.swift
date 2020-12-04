@@ -31,7 +31,7 @@ final class EventUseCase: EventUseCaseProtocol {
                     EventTableCell.State(title: $0.title,
                                          date: "28",
                                          month: "January",
-                                         adress: "ул. Октябрьская 16/4 (SPACE)")
+                                         address: "ул. Октябрьская 16/4 (SPACE)")
                 }
             }
     }

@@ -26,6 +26,7 @@ internal enum Asset {
   }
   internal enum Images {
     internal static let logo = ImageAsset(name: "Logo")
+    internal static let filter = ImageAsset(name: "filter")
     internal static let launchBackground = ImageAsset(name: "launch_background")
   }
 }

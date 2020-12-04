@@ -28,7 +28,7 @@ extension EventTableCell: CellDataBindable {
         titleLabel.text = item.title
         dateLabel.text = item.date
         monthLabel.text = item.month
-        addressLabel.text = item.adress
+        addressLabel.text = item.address
     }
 }
 
@@ -40,6 +40,6 @@ extension EventTableCell {
         let title: String
         let date: String
         let month: String
-        let adress: String
+        let address: String
     }
 }

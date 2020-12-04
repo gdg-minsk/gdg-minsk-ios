@@ -17,7 +17,7 @@ internal enum L10n {
   }
 
   internal enum Profile {
-    /// profile
+    /// Profile
     internal static let title = L10n.tr("Localizable", "profile.title")
   }
 
