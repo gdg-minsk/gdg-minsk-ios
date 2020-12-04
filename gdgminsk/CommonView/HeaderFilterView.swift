@@ -51,7 +51,7 @@ final class HeaderFilterView: UIView {
     
     private func updateAppearance() {
         guard let state = state else { return }
-        titleLabel.text = state.title
+        titleLabel.attributedText = state.title.styled(with: .regularText)
     }
 }
 

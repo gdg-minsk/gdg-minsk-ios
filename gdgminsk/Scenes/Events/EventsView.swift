@@ -14,6 +14,7 @@ final class EventsView: BaseView<EventsViewModel> {
     
     // MARK: Properties
     
+    @IBOutlet weak private var headerFilterView: HeaderFilterView!
     @IBOutlet weak private var tableView: UITableView!
     
     private var tableDataSource = EventsTableSource()
@@ -23,6 +24,7 @@ final class EventsView: BaseView<EventsViewModel> {
     
     override func setup() {
         super.setup()
+        headerFilterView.state = .init(title: L10n.Events.title)
         setupTableView()
     }
     
