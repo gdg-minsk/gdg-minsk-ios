@@ -26,6 +26,11 @@ final class EventTableCell: UITableViewCell {
         contentContainer.layer.maskedCorners = .all
         futureBackgroundView.layer.cornerRadius = cornerRadius
         futureBackgroundView.layer.maskedCorners = .all
+        
+        contentContainer.layer.shadowOpacity = 1
+        contentContainer.layer.shadowOffset = CGSize(width: 0, height: 0)
+        contentContainer.layer.shadowRadius = 4
+        contentContainer.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
     }
 }
 
