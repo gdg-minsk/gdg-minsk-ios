@@ -45,6 +45,10 @@ extension EventsTableSource: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: EventTableCell.identifier, for: indexPath) as? EventTableCell else {
+            return UITableViewCell()
+        }
+        cell.bind(states[indexPath.row])
+        return cell
     }
 }

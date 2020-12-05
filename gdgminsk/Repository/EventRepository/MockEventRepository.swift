@@ -18,17 +18,32 @@ final class MockEventRepository: EventRepositoryProtocol {
             .init(title: "GDG Minsk Cloud Meetup",
                   date: Date(),
                   place: "SPACE",
-                  address: "ул. Октябрьская 16/4"),
+                  address: "ул. Октябрьская 16/4",
+                  isPast: true),
             
             .init(title: "GDG Minsk Cloud Meetup 1",
                   date: Date(),
                   place: "SPACE",
-                  address: "ул. Октябрьская 16/4"),
+                  address: "ул. Октябрьская 16/4",
+                  isPast: true),
             
             .init(title: "GDG Minsk Cloud Meetup 2",
                   date: Date(),
                   place: "SPACE",
-                  address: "ул. Октябрьская 16/4")
+                  address: "ул. Октябрьская 16/4",
+                  isPast: true),
+            
+            .init(title: "GDG Minsk Cloud Meetup 3",
+                  date: Date(),
+                  place: "SPACE",
+                  address: "ул. Октябрьская 16/4",
+                  isPast: true),
+            
+            .init(title: "GDG Minsk Cloud Meetup 4",
+                  date: Date(),
+                  place: "SPACE",
+                  address: "ул. Октябрьская 16/4",
+                  isPast: true)
         ])
     }
 }

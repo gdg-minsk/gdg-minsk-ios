@@ -13,4 +13,5 @@ struct Event {
     let date: Date
     let place: String
     let address: String
+    let isPast: Bool
 }

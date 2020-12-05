@@ -14,4 +14,24 @@ extension StringStyle {
         .font(FontFamily.Roboto.regular.font(size: 14)),
         .color(Asset.Colors.gray.color)
     )
+    
+    static let eventTitle = StringStyle(
+        .font(FontFamily.Roboto.regular.font(size: 21)),
+        .color(Asset.Colors.darkBlue.color)
+    )
+    
+    static let eventAddress = StringStyle(
+        .font(FontFamily.RobotoCondensed.regular.font(size: 14)),
+        .color(Asset.Colors.gray.color)
+    )
+    
+    static let eventMonth = StringStyle(
+        .font(FontFamily.Roboto.regular.font(size: 12)),
+        .color(Asset.Colors.gray.color)
+    )
+    
+    static let eventDate = StringStyle(
+        .font(FontFamily.Roboto.regular.font(size: 32)),
+        .color(Asset.Colors.gray.color)
+    )
 }
