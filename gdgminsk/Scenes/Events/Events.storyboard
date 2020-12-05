@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Events View-->
+        <!--Events-->
         <scene sceneID="zCs-LU-w6V">
             <objects>
                 <viewController storyboardIdentifier="EventsView" id="q3G-u6-cMX" customClass="EventsView" customModule="gdgminsk" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,7 +25,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gCm-Ia-M2g">
-                                <rect key="frame" x="0.0" y="110" width="414" height="752"/>
+                                <rect key="frame" x="0.0" y="110" width="414" height="703"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -41,6 +41,8 @@
                             <constraint firstItem="nKn-gU-0ox" firstAttribute="leading" secondItem="Cf4-Pg-Ra8" secondAttribute="leading" id="vC8-9e-JgH"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Events" image="pencil.slash" catalog="system" id="oSP-xM-Uxd"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="headerFilterView" destination="nKn-gU-0ox" id="NGE-1j-H78"/>
                         <outlet property="tableView" destination="gCm-Ia-M2g" id="KrC-AU-Nxw"/>
@@ -52,6 +54,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="pencil.slash" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

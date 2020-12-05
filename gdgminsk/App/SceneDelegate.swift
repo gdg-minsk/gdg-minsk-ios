@@ -19,8 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window?.windowScene = windowScene
         let session = Session()
         self.session = session
-        let eventsView = EventsSceneBuilder().makeScene(session: session)
-        window?.rootViewController = eventsView
+        let tabBarView = TabBarController(session: session)
+        window?.rootViewController = tabBarView
         window?.makeKeyAndVisible()
     }
 }
